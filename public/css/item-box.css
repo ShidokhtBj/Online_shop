@@ -1,0 +1,69 @@
+#slider-2{
+    .owl-stage-outer{
+        width: 100% !important;
+        height: 100% !important;
+        .owl-stage{
+            width: 85% !important;
+            height: 100% !important;
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: center !important;
+            align-items: center !important;
+            margin-left: auto;
+            margin-right: auto;
+            .owl-item{
+                height: 100% !important;
+                a{
+                   
+                    height: 100% !important;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                    width: 55px !important;
+                    height: 55px !important;
+                    }
+                }
+            }
+        }
+    }
+    .owl-dots {
+        text-align: center;
+        position: absolute;
+        @media (max-width: 1023px) {
+          top: calc(100% - 10%);
+          left: calc(100% - 45%);
+        }
+        @media (max-width: 500px) {
+          top: calc(100% - 10%);
+          left: calc(100% - 45%);
+        }
+      }
+      .owl-dots button.owl-dot {
+        width: 30px;
+        height: 5px;
+        border-radius: 20%;
+        display: inline-block;
+        background: #ccc;
+        margin: 0 3px;
+        position: absolute;
+        z-index: 0;
+        top: 10px;
+        
+      }
+      .owl-dots button.owl-dot.active {
+        background-color:  #424750;
+        width: 10px;
+        height: 5px;
+        border-radius: 35%;
+        transition: 700ms;
+        position: absolute;
+        z-index: 1;
+        bottom: 10px;
+      }
+      .owl-dots button.owl-dot:focus {
+        outline: none;
+        
+      }
+}

@@ -1,0 +1,37 @@
+header .header__bottom{
+    #nav__item{
+        position: relative;
+    } 
+    #nav__item::after{
+        position: absolute;
+        left: 2%;
+        bottom: 0;
+        background-color: #ef4056;
+        content: "";
+        display: block;
+        width: 90%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 200ms linear;
+    }   
+    #nav__item:hover::after{
+        transform: scaleX(1);
+    }
+   
+    #city__hover{
+        background-color: #474c54;
+        border-radius: 6px;
+        color: white;
+        position: absolute; 
+        width: 170px;
+        height: 40px;
+        transform: translate3d(-5px, 40px, 0px);
+        display: none;
+        flex-flow: row;
+    }
+    #city:hover #city__hover{
+        transition: 1400ms;
+        display: flex;
+    }
+}

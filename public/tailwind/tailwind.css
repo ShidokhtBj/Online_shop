@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: IRANYekan-Bold;
+    src: url(./public/font/IRANYekanWeb-Bold.eot) format("eot"),
+      url(./public/font/IRANYekanWeb-Bold.ttf) format("ttf"),
+      url(./public/font/IRANYekanWeb-Bold.woff) format("woff"),
+      url(./public/font/IRANYekanWeb-Bold.woff2) format("wooff2");
+  }
+  @font-face {
+    font-family: IRANYekanWeb-ExtraBold;
+    src: url(./public/font/IRANYekanWeb-ExtraBold.eot) format("eot"),
+      url(./public/font/IRANYekanWeb-ExtraBold.ttf) format("ttf"),
+      url(./public/font/IRANYekanWeb-ExtraBold.woff) format("woff"),
+      url(./public/font/IRANYekanWeb-ExtraBold.woff2) format("wooff2");
+  }
+  @font-face {
+    font-family: IRANYekanWeb-Medium;
+    src: url(./public/font/IRANYekanWeb-Medium.eot) format("eot"),
+      url(./public/font/IRANYekanWeb-Medium.ttf) format("ttf"),
+      url(./public/font/IRANYekanWeb-Medium.woff) format("wooff"),
+      url(./public/font/IRANYekanWeb-Medium.woff2) format("wooff2");
+  }
+    @font-face {
+    font-family: IRANYekanWeb-regular;
+    src: url(./public/font/IRANYekanWeb-regular.eot) format("eot"),
+      url(./public/font/IRANYekanWeb-regular.ttf) format("ttf"),
+      url(./public/font/IRANYekanWeb-regular.woff) format("wooff"),
+      url(./public/font/IRANYekanWeb-regular.woff2) format("wooff2");
+  }
+}
+

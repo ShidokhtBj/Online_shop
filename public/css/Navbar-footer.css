@@ -1,0 +1,16 @@
+#Navbar-footer {
+  div a div.animate__animated {
+    width: 170px;
+    height: 100%;
+    position: absolute;
+  }
+  div a.animate__animated:hover {
+    div.my-bg {
+      background-color: #d0d0d0;
+      filter: blur(4px);
+      opacity: 0.4;
+      animation-name: zoomIn;
+      animation-duration: 0.4s;
+    }
+  }
+}

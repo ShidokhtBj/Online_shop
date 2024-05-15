@@ -1,0 +1,114 @@
+.submenu{
+    .Title__submenu{
+        scrollbar-color: #bbbbbb #e5e5e5;
+        .Title__submenu__item{
+            box-sizing: border-box;
+            &:nth-child(1) .Title__submenu__item__heading:hover , &:nth-child(10) .Title__submenu__item__heading:hover {
+               background-color: white;
+               color: #ef4056;
+               div{
+                content: url(../image/nav/phone-red.svg);
+               }
+            }
+            &:nth-child(2) .Title__submenu__item__heading:hover , &:nth-child(11) .Title__submenu__item__heading:hover{
+                background-color: white;
+                color: #ef4056;
+                div{
+                 content: url(../image/nav/art-red.svg);
+                }
+             }
+             &:nth-child(3) .Title__submenu__item__heading:hover , &:nth-child(12) .Title__submenu__item__heading:hover{
+                background-color: white;
+                color: #ef4056;
+                div{
+                 content: url(../image/nav/Digital-red.svg);
+                }
+             }
+             &:nth-child(4) .Title__submenu__item__heading:hover , &:nth-child(13) .Title__submenu__item__heading:hover{
+                background-color: white;
+                color: #ef4056;
+                div{
+                 content: url(../image/nav/home-red.svg);
+                }
+             }
+             &:nth-child(5) .Title__submenu__item__heading:hover , &:nth-child(14) .Title__submenu__item__heading:hover{
+                background-color: white;
+                color: #ef4056;
+                div{
+                 content: url(../image/nav/Appliances-red.svg);
+                }
+             }
+             &:nth-child(6) .Title__submenu__item__heading:hover , &:nth-child(15) .Title__submenu__item__heading:hover{
+                background-color: white;
+                color: #ef4056;
+                div{
+                 content: url(../image/nav/fashion-red.svg);
+                }
+             }
+             &:nth-child(7) .Title__submenu__item__heading:hover , &:nth-child(16) .Title__submenu__item__heading:hover{
+                background-color: white;
+                color: #ef4056;
+                div{
+                 content: url(../image/nav/Jewellery-red.svg);
+                }
+             }
+             &:nth-child(8) .Title__submenu__item__heading:hover , &:nth-child(17) .Title__submenu__item__heading:hover{
+                background-color: white;
+                color: #ef4056;
+                div{
+                 content: url(../image/nav/Cosmetic-red.svg);
+                }
+             }
+             &:nth-child(9) .Title__submenu__item__heading:hover , &:nth-child(18) .Title__submenu__item__heading:hover{
+                background-color: white;
+                color: #ef4056;
+                div{
+                 content: url(../image/nav/Medical-red.svg);
+                }
+             }
+           
+            .Title__submenu__item__description {
+                display: none;
+                .Title__submenu__item__description__sub{
+                    .Title__submenu__item__description__sub__content{
+                        .Title__submenu__item__description__sub__content__column{
+                            .Title__submenu__item__description__sub__content__column__product:hover{
+                                a{
+                                    color: #ef4056;
+                                    svg{
+                                        fill: #ef4056 !important;
+                                    }
+                                }
+                            }
+                            div:hover{
+                                a{
+                                    color: #ef4056;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover  .Title__submenu__item__description{
+                display: block;
+            }
+            &:hover .Title__submenu__item__heading{
+                background-color: white;
+                color: #ef4056;
+            }
+            
+        }
+    }
+    
+}
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F0F0F1;
+  }
+  html::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: #C0C2C5;
+  }
+  .active {
+    display: block !important;
+  }
