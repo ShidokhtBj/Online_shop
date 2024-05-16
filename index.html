@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./public/css/main.css" type="text/css" />
     <title>فروشگاه اینترنتی دیجی کالا</title>
     <link
@@ -43,6 +43,7 @@
       href="./public/css/footer.css"
       type="text/css"
     />
+    
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
     
   </head>
@@ -9984,7 +9985,7 @@
 
       <!--item-box-->
       <div
-        class="item-box w-[100%] h-[130px] flex justify-center mx-auto Tablet:hidden bg-black"
+        class="item-box w-[100%] h-[130px] flex justify-center mx-auto Tablet:hidden"
       >
         <div class="w-[85%] h-[100%] flex flex-row items-center justify-center">
           <a
@@ -10126,9 +10127,6 @@
           </a>
         </div>
       </div>
-
-      <!--item-box(tablet)-->
-     
 
       <!--special-offer-->
       <div class="special-offer w-[100%] h-[300px] flex justify-center">
@@ -10704,12 +10702,198 @@
         <div
           class="w-[85%] h-[inherit] flex flex-col justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
         >
-          <div class="flex flex-row justify-center items-center w-[100%] h-[20%]">
-            <img src="./public/image/popular-brands/star.svg" alt="svg">
+          <div class="flex flex-row justify-center items-center w-[100%] h-[20%] text-center text-[20px] text-[#3a3655] font-IRANYekanExtraBold font-bold mt-2">
+            <img src="./public/image/popular-brands/star.svg" alt="svg" class="w-[18px] h-[18px] ml-2">
             محبوب ترین برندها
           </div>
-          <div class="flex justify-center items-center w-[100%] h-[80%]">
-            اسالایدر
+          <div class="flex justify-center items-center w-[100%] h-[80%] relative">
+            <div class="popular-brands-slider w-[100%]" id="popular-brands-slider" >
+              <div class="swiper popular-brands w-[100%] h-[100%]">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/1.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/2.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/3.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[110px] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center items-center pb-4">
+                      <img
+                        src="./public/image/popular-brands/4.png"
+                        alt="popular-brands"
+                        class="w-[110px]"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/5.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/6.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/7.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/8.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/9.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/10.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[110px] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center items-center pb-1">
+                      <img
+                        src="./public/image/popular-brands/11.png"
+                        alt="popular-brands"
+                        class="w-[110px]"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[110px] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center items-center pb-4">
+                      <img
+                        src="./public/image/popular-brands/12.png"
+                        alt="popular-brands"
+                        class="w-[110px]"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/13.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[110px] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center items-center pb-4">
+                      <img
+                        src="./public/image/popular-brands/14.png"
+                        alt="popular-brands"
+                        class="w-[110px]"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/15.png"
+                        alt="popular-brands"
+                        class="w-[110px]"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/16.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/17.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/18.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/19.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide !w-fit h-[100%] border-l-[1px] border-[#D0D0D0] border-opacity-[50%]">
+                    <a href="#" class="w-[145px] h-[100%] flex justify-center">
+                      <img
+                        src="./public/image/popular-brands/20.png"
+                        alt="popular-brands"
+                        class="w-[110px] object-contain"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
           </div>
         </div>
       </div>
@@ -10717,7 +10901,7 @@
       <!--category Based on visit 1-->
       <div class="w-[100%] h-[420px] flex justify-center mt-5 mb-5">
         <div
-          class="w-[80%] h-[inherit] flex flex-row justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
+          class="w-[85%] h-[inherit] flex flex-row justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
         >
           <div
             class="flex justify-start flex-col w-[25%] h-[100%] border-l-[1px] border-[#D0D0D0] p-4"
@@ -10911,7 +11095,7 @@
       <!--digiclab-->
       <div class="w-[100%] h-[90px] flex justify-center mt-5 mb-5">
         <div
-          class="w-[80%] h-[inherit] flex flex-row justify-center rounded-[20px] bg-gradient-to-r from-[#35A6C8] to-[#007295]"
+          class="w-[85%] h-[inherit] flex flex-row justify-center rounded-[20px] bg-gradient-to-r from-[#35A6C8] to-[#007295]"
         >
           <div
             class="flex justify-start items-center w-[25%] h-[inherit] pr-10"
@@ -10995,17 +11179,277 @@
       </div>
 
       <!--Best selling products-->
-      <div class="w-[100%] h-[400px] flex justify-center mt-5 mb-5">
-        <div class="w-[80%] h-[inherit] flex flex-col justify-center">
-          <div
-            class="flex justify-center items-center bg-[#ee384e] w-[100%] h-[20%]"
-          >
-            پرفروش ترین کالاها
+      <div class="w-[100%] h-[400px] flex items-center justify-center mt-5 mb-5">
+        <div class="w-[85%] h-[inherit] flex flex-col justify-center items-center border-[1px] border-[#D0D0D0] rounded-[15px]">
+          <div class="flex flex-row justify-b items-center w-[100%] h-[20%] text-center text-[20px] text-[#3a3655] font-IRANYekanExtraBold font-bold mt-2">
+            <span class="flex items-center justify-center flex-row h-[100%] w-[100%]">
+              <img src="./public/image/Best-selling-products/hot.svg" alt="svg" class="w-[20px] h-[20px] ml-2">
+              پر فروش‌‌‌‌‌‌‍ترین کالا‌ها
+            </span>
+            <span class="flex items-center justify-end flex-row text-[#00BFD6] h-[100%] ml-4">مشاهده</span>
           </div>
           <div
-            class="flex justify-center items-center bg-[#ffbac2] w-[100%] h-[80%]"
+            class="Best__selling__slider flex flex-row justify-center items-center w-[100%] h-[80%]"
           >
-            اسالایدر
+          <div class="swiper Best__selling w-[100%] h-[100%]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/1.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    کاغذ A4 کپی مکس مدل KNS بسته 500 عددی
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/2.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۲</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    گوشی موبایل شیائومی مدل Redmi Note 13 4G و رم 8 گیگابایت...
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/3.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۳</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold h-[90px] flex justify-center items-center">
+                    گوشی موبایل جی پلاس مدل X20  و رم 4 گیگابایت ...
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/4.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۴</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    گوشی موبایل سامسونگ  دو سیم کارت ظرفیت 128 گیگابایت و ...
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/5.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۵</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    پنیر فتا دوشه هراز - 400 گرم
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/6.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۶</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] flex justify-center items-center">
+                    خامه صبحانه کاله -200 میلی لیتر
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/7.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۷</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    خودکار زبرا مدل Z-1 S
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/8.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۸</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    محافظ کابل مدل صدفی C100
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/9.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[40px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۹</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px]  flex justify-center items-center">
+                    لامپ ال ای دی 9 وات سایروکس مدل A60 پایه E27 بسته 2 عددی
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/10.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۰</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    نوشیدنی پرتقال حاوی تیکه های واقعی میوه رانی  - 240 میلی...
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/11.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۱</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    شامپو بدن صحت مدل Guar &amp; Glycerin حجم 300 میلی لیتر
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/12.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۲</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] flex justify-center items-center">
+                    کالباس 90 درصد گوشت قرمز مهيا پروتئين - 250 گرم		
+                  </div>
+                </a>
+              </div>
+
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/1.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۳</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    کاغذ A4 کپی مکس مدل KNS بسته 500 عددی
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/2.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۴</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    گوشی موبایل شیائومی مدل Redmi Note 13 4G و رم 8 گیگابایت...
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/3.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۵</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold h-[90px] flex justify-center items-center">
+                    گوشی موبایل جی پلاس مدل X20  و رم 4 گیگابایت ...
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/4.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۶</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    گوشی موبایل سامسونگ  دو سیم کارت ظرفیت 128 گیگابایت و ...
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/5.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۷</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] border-b-[1px] border-opacity-[50%] border-[#D0D0D0] flex justify-center items-center">
+                    پنیر فتا دوشه هراز - 400 گرم
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide h-[100%] text-right flex justify-center items-center mr-[10px]">
+                <a href="#" class="w-[100%] h-[86px] flex flex-row justify-center items-center">
+                  <img
+                    src="./public/image/Best-selling-products/6.jpg"
+                    alt="Best__selling"
+                    class="w-[86px] h-[86px] ml-5 p-1"
+                  />
+                  <span class="text-[32px] text-[#00bfd6] font-IRANYekanExtraBold font-bold ml-3">۱۸</span>
+                  <div class="text-[15px] text-[#3a3655] font-IRANYekanExtraBold w-[184px] h-[90px] flex justify-center items-center">
+                    خامه صبحانه کاله -200 میلی لیتر
+                  </div>
+                </a>
+              </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
           </div>
         </div>
       </div>
@@ -11013,7 +11457,7 @@
       <!--category Based on visit 2-->
       <div class="w-[100%] h-[420px] flex justify-center mt-5 mb-5">
         <div
-          class="w-[80%] h-[inherit] flex flex-row justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
+          class="w-[85%] h-[inherit] flex flex-row justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
         >
           <div
             class="flex justify-start flex-col w-[25%] h-[100%] border-l-[1px] border-[#D0D0D0] p-4"
@@ -11207,7 +11651,7 @@
       <!--Discount products-->
       <div class="w-[100%] h-[680px] flex justify-center mt-5 mb-5">
         <div
-          class="w-[80%] h-[inherit] flex flex-col justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
+          class="w-[85%] h-[inherit] flex flex-col justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
         >
           <div
             class="flex justify-center items-center w-[100%] h-[10%] text-[20px] text-[#0C0C0C] font-IRANYekanExtraBold font-bold"
@@ -11221,11 +11665,11 @@
             >&nbsp; منتخب محصولات تخفیف و حراج
           </div>
           <div
-            class="flex flex-row justify-center items-center w-[100%] h-[30%] text-[20px] text-[#0C0C0C] font-IRANYekanExtraBold font-bold"
+            class="flex flex-row justify-center items-center w-[100%] h-[30%] text-[20px] text-[#0C0C0C] font-IRANYekanExtraBold font-bold px-4"
           >
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/special-offer/special-offer-img8.svg"
@@ -11263,7 +11707,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/special-offer/special-offer-img6.svg"
@@ -11301,7 +11745,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/special-offer/special-offer-img7.svg"
@@ -11339,7 +11783,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/special-offer/special-offer-img9.svg"
@@ -11377,7 +11821,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/special-offer/special-offer-img10.svg"
@@ -11415,7 +11859,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-b-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-b-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/special-offer/special-offer-img11.svg"
@@ -11453,11 +11897,11 @@
             </a>
           </div>
           <div
-            class="flex justify-center items-center w-[100%] h-[30%] text-[20px] text-[#0C0C0C] font-IRANYekanExtraBold font-bold"
+            class="flex justify-center items-center w-[100%] h-[30%] text-[20px] text-[#0C0C0C] font-IRANYekanExtraBold font-bold px-4"
           >
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/Headphone3.jpg"
@@ -11495,7 +11939,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/phone2.jpg"
@@ -11533,7 +11977,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/phone3.jpg"
@@ -11571,7 +12015,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/Headphone4.jpg"
@@ -11609,7 +12053,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-b-[1px] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/Headphone1.jpg"
@@ -11647,7 +12091,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-b-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-b-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/Headphone2.jpg"
@@ -11685,11 +12129,11 @@
             </a>
           </div>
           <div
-            class="flex justify-center items-center w-[100%] h-[30%] text-[20px] text-[#0C0C0C] font-IRANYekanExtraBold font-bold"
+            class="flex justify-center items-center w-[100%] h-[30%] text-[20px] text-[#0C0C0C] font-IRANYekanExtraBold font-bold px-2 pb-1"
           >
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/smart-watch1.jpg"
@@ -11727,7 +12171,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/smart-watch2.jpg"
@@ -11765,7 +12209,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/smart-watch3.jpg"
@@ -11803,7 +12247,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff] border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/speaker1.jpg"
@@ -11841,7 +12285,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-l-[1px] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/speaker2.jpg"
@@ -11879,7 +12323,7 @@
             </a>
             <a
               href="#"
-              class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]border-opacity-[50%] border-[#D0D0D0]"
+              class="w-[16.66%] h-[100%] flex flex-col justify-center items-center border-opacity-[50%] border-[#D0D0D0]"
             >
               <img
                 src="./public/image/Category-Based-on-visit/speaker4.jpg"
@@ -11919,23 +12363,10 @@
         </div>
       </div>
 
-      <!--hottest of the past HRs-->
-      <div class="w-[100%] h-[400px] flex justify-center mt-5 mb-5">
-        <div
-          class="w-[80%] h-[inherit] flex flex-col justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
-        >
-          <div class="flex justify-center items-center w-[100%] h-[20%]">
-            داغ ترین چند ساعت گذشته
-          </div>
-          <div class="flex justify-center items-center w-[100%] h-[80%]">
-            اسالایدر
-          </div>
-        </div>
-      </div>
 
       <!--Article-->
       <div class="w-[100%] h-[350px] flex justify-center mt-5 mb-5">
-        <div class="w-[80%] h-[inherit] flex flex-col justify-center">
+        <div class="w-[85%] h-[inherit] flex flex-col justify-center">
           <div
             class="flex justify-center items-center flex-row w-[100%] h-[20%]"
           >
@@ -11979,7 +12410,7 @@
               </div>
             </div>
             <div
-              class="h-[100%] w-[25%] border-[1px] border-[#D0D0D0] rounded-[20px] ml- flex flex-col justify-start items-center"
+              class="h-[100%] w-[25%] border-[1px] border-[#D0D0D0] rounded-[20px] ml-2 flex flex-col justify-start items-center"
             >
               <img
                 src="./public/image/Article/Article2.jpg"
@@ -12012,7 +12443,7 @@
               <img
                 src="./public/image/Article/Article4.jpg"
                 alt="Article"
-                class="rounded-t-[20px] h-[70%]"
+                class="rounded-t-[20px] h-[70%] w-[100%]"
               />
               <div
                 class="mt-3 mb-3 px-4 w-[100%] text-right text-[14px] text-[#0C0C0C] font-IRANYekanExtraBold"
@@ -12279,7 +12710,7 @@
 
 
     </div>
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".story__Swiper", {
         slidesPerView: 12,
@@ -12316,6 +12747,24 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      var swiper = new Swiper(".popular-brands", {
+        slidesPerView: 9,
+        spaceBetween: 0,
+      });
+
+      var swiper = new Swiper(".Best__selling", {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        grid: {
+          rows: 3,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
     </script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script> 
     <script src="./public/js/main.js"></script>

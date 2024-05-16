@@ -1,0 +1,12 @@
+.Best__selling__slider {
+   
+    .swiper {
+      .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+        opacity: 0;
+        cursor: auto;
+        pointer-events: none;
+      }
+      
+    }
+  }
+
