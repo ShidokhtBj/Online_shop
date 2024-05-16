@@ -17,6 +17,7 @@ export default {
         'DeskTop': {'min': '1024px'},
         'box':{'min':'550px'},
         'box2':{'min':'900px'},
+        'lg':{'min':'1024px'},
         'xl':{'max':'1280px'},
         'story':{'min':'1336px'},
         '2xl':{'min':'1536px'}
