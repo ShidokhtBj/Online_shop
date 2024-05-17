@@ -1,5 +1,5 @@
 .item-box {
-  .item-box-center  div{
+  .item-box-center .item-box-row1 , .item-box-center .item-box-row2 {
     a{
       @media (max-width: 1200px) {
         Width:100px;
@@ -11,6 +11,9 @@
         margin-left:20px;
         margin-right:20px;
       }
+    }
+    span{
+      text-align: center;
     }
   }
  

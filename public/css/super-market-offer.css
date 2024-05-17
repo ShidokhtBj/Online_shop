@@ -32,6 +32,11 @@
                                 padding-top: 10px;
                                 Width:240px;
                                  }
+                                 @media (max-width: 1022px) and (min-width:350px) {
+                                    padding-top: 10px;
+                                    Width:260px;
+                                    
+                                     }
         }
         .super-market-item{
             @media (max-width: 1280px) {
