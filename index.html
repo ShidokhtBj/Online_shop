@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="./public/css/nav-item.css" type="text/css" />
     <link rel="stylesheet" href="./public/css/footer.css" type="text/css" />
     <link rel="stylesheet" href="./public/css/body.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/super-market-offer.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/banner1.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/banner2.css" type="text/css" />
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
   </head>
   <body>
@@ -15314,10 +15317,10 @@
       <!-- story -->
       <div
         id="story"
-        class="w-[100%] h-[150px] flex justify-center story:px-28 mt-[170px] Tablet:mt-[90px] z-0"
+        class="w-[100%] h-[150px] flex justify-center px-20 story:px-0 mt-[170px] Tablet:mt-[90px] z-0"
       >
         <div
-          class="story__center w-[95%] h-[100%] mx-auto bg-white flex flex-row justify-center items-center"
+          class="story__center w-[95%] h-[100%] bg-white flex flex-row justify-center items-center"
         >
           <div class="swiper story__Swiper w-[100%] h-[100%]">
             <div class="swiper-wrapper">
@@ -15986,11 +15989,13 @@
       </div>
 
       <!--item-box-->
-      <div class="item-box w-[100%] h-[130px] flex justify-center mx-auto">
-        <div class="w-[85%] h-[100%] flex flex-row items-center justify-center">
+      <div class="item-box w-[100%] h-[130px] Tablet:h-[190px] flex justify-center mx-auto story:mx-0 Tablet:mt-2 Tablet:mb-2">
+        <div class="item-box-center w-[90%] h-[100%] flex flex-row items-center justify-center Tablet:flex-wrap story:w-[100%] ">
+          <div class="flex flex-row w-[50%] h-[100%] Tablet:w-[100%]  Tablet:h-[50%] justify-end Tablet:justify-center items-center"
+          >
           <a
             href="#"
-            class="w-[150px] h-[100%] flex flex-col justify-center items-center ml-1 xl:mr-[60px]"
+            class="w-[150px] h-[100%] flex flex-col justify-center items-center"
           >
             <img
               src="./public/image/item-box/1.jpg"
@@ -16004,7 +16009,7 @@
           </a>
           <a
             href="#"
-            class="w-[150px] h-[100%] flex flex-col justify-center items-center ml-1 Tablet:mx-2"
+            class="w-[150px] h-[100%] flex flex-col justify-center items-center"
           >
             <img
               src="./public/image/item-box/2.jpg"
@@ -16018,7 +16023,7 @@
           </a>
           <a
             href="#"
-            class="w-[150px] h-[100%] flex flex-col justify-center items-center ml-1 Tablet:mx-2"
+            class="w-[150px] h-[100%] flex flex-col justify-center items-center"
           >
             <img
               src="./public/image/item-box/3.jpg"
@@ -16032,7 +16037,24 @@
           </a>
           <a
             href="#"
-            class="w-[150px] h-[100%] flex flex-col justify-center items-center ml-1 Tablet:mx-2"
+            class="w-[150px] h-[100%] flex flex-col justify-center items-center"
+          >
+            <img
+              src="./public/image/item-box/ios.png"
+              alt="box"
+              class="w-[55px] h-[55px] rounded-[50%] my-2"
+            />
+            <span
+              class="text-[13px] text-[#3a3655] font-IRANYekanExtraBold font-bold"
+              >اپلیکیشن ios</span
+            >
+          </a>
+          </div>
+          <div class="flex flex-row w-[50%] h-[100%] Tablet:w-[100%] Tablet:h-[50%] justify-start  Tablet:justify-center items-center"
+          >
+          <a
+            href="#"
+            class="w-[150px] h-[100%] flex flex-col justify-center items-center"
           >
             <img
               src="./public/image/item-box/4.jpg"
@@ -16046,7 +16068,7 @@
           </a>
           <a
             href="#"
-            class="w-[150px] h-[100%] flex flex-col justify-center items-center ml-1 Tablet:mx-2"
+            class="w-[150px] h-[100%] flex flex-col justify-center items-center"
           >
             <img
               src="./public/image/item-box/5.png"
@@ -16060,21 +16082,7 @@
           </a>
           <a
             href="#"
-            class="w-[150px] h-[100%] flex flex-col justify-center items-center ml-1 Tablet:hidden"
-          >
-            <img
-              src="./public/image/item-box/6.jpg"
-              alt="box"
-              class="w-[55px] h-[55px] rounded-[50%] my-2"
-            />
-            <span
-              class="text-[13px] text-[#3a3655] font-IRANYekanExtraBold font-bold"
-              >تخم‌مرغ شانسی</span
-            >
-          </a>
-          <a
-            href="#"
-            class="w-[150px] h-[100%] flex flex-col justify-center items-center ml-1 Tablet:hidden"
+            class="w-[150px] h-[100%] flex flex-col justify-center items-center"
           >
             <img
               src="./public/image/item-box/7.jpg"
@@ -16088,7 +16096,7 @@
           </a>
           <a
             href="#"
-            class="w-[150px] h-[100% flex flex-col justify-center items-center xl:ml-[60px]"
+            class="w-[150px] h-[100% flex flex-col justify-center items-center"
           >
             <div
               class="bg-[#F0F0F1] w-[55px] h-[55px] rounded-[50%] my-2 flex justify-center items-center"
@@ -16099,7 +16107,7 @@
                 style="
                   width: 32px;
                   height: 32px;
-                  fill: var(--color-icon-low-emphasis);
+                  fill: #a1a3a8;
                 "
                 width="32"
                 height="32"
@@ -16125,6 +16133,8 @@
               >بیشتر</span
             >
           </a>
+          </div>
+          
         </div>
       </div>
 
@@ -16179,7 +16189,7 @@
                     class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] Tablet:w-[29px] h-[20px] Tablet:h-[15px] bg-[#d32f2f] rounded-[14px] Tablet:text-[11px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
                     >
                       ٪٩
                     </div>
@@ -16191,7 +16201,7 @@
                     />
                   </div>
                   <del
-                    class="mt-[5px] Tablet:ml-[15px] text-[12px] Tablet:text-[11px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] Tablet:ml-[15px] Tablet:text-[11px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
                     >١٤.٦٩٩.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
@@ -16232,7 +16242,7 @@
                     />
                   </div>
                   <del
-                    class="mt-[5px] Tablet:ml-[15px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] Tablet:ml-[15px] Tablet:text-[11px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
                     >٩.٦٣٥.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
@@ -16250,18 +16260,19 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/special-offer/special-offer-img8.svg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] text-[#3F4064] Tablet:text-[14px] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[15px]"
                     >
                       ٪٧
                     </div>
@@ -16269,16 +16280,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >٥,٢٩٩,٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden Tablet:w-[120px]"
                     >
                       <div
                         class="bg-[#d32f2f] w-[70px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16291,18 +16302,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/special-offer/special-offer-img9.svg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪١٤
                     </div>
@@ -16310,16 +16321,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >٣٧.٨٨٠.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[20px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16332,18 +16343,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/special-offer/special-offer-img11.svg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪١٢
                     </div>
@@ -16351,16 +16362,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >٤.١٩٩.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[20px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16373,18 +16384,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/Category-Based-on-visit/phone4.jpg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪٩
                     </div>
@@ -16392,16 +16403,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >١٤.٦٩٩.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[70px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16414,18 +16425,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/Category-Based-on-visit/smart-watch1.jpg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪٧
                     </div>
@@ -16433,16 +16444,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >٩.٦٣٥.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[70px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16455,18 +16466,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/Category-Based-on-visit/phone1.jpg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪٧
                     </div>
@@ -16474,16 +16485,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >٥,٢٩٩,٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[87px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16496,18 +16507,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/special-offer/special-offer-img2.svg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪١٤
                     </div>
@@ -16515,16 +16526,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >٣٧.٨٨٠.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[20px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16537,18 +16548,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/Category-Based-on-visit/headphone1.jpg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪١٢
                     </div>
@@ -16556,16 +16567,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >٤.١٩٩.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[20px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16578,18 +16589,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/Category-Based-on-visit/headphone2.jpg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪٩
                     </div>
@@ -16597,16 +16608,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >١٤.٦٩٩.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[38px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16619,18 +16630,18 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <a
                   href="#"
-                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff]"
+                  class="w-[180px] h-[100%] flex flex-col justify-center items-center bg-[#fff] Tablet:w-[150px]"
                 >
                   <img
                     src="./public/image/Category-Based-on-visit/speaker1.jpg"
                     alt="special-offer"
-                    class="h-[160px]"
+                    class="h-[160px] Tablet:h-[110px]"
                   />
                   <div
-                    class="mt-3 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
+                    class="mt-3 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold flex flex-row justify-center items-center flex-nowrap box-border"
                   >
                     <div
-                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5"
+                      class="w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center ml-5 Tablet:w-[29px] Tablet:h-[15px] Tablet:text-[11px]"
                     >
                       ٪٧
                     </div>
@@ -16638,16 +16649,16 @@
                     <img
                       src="./public/image/special-offer/special-offers-toman-icon.svg"
                       alt="special-offer"
-                      class="toman"
+                      class="toman Tablet:h-[11px]"
                     />
                   </div>
                   <del
-                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
+                    class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px] Tablet:ml-[15px] Tablet:text-[11px]"
                     >١٤.٦٩٩.٠٠٠</del
                   >
                   <div class="mt-4 mb-[1px]">
                     <div
-                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden"
+                      class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden Tablet:w-[120px] "
                     >
                       <div
                         class="bg-[#d32f2f] w-[70px] h-[4px] rounded-[20px] absolute z-0 left-0 top-0"
@@ -16660,7 +16671,7 @@
               <div class="swiper-slide !w-fit h-[100%]">
                 <span
                   href="#"
-                  class="w-[180px] h-[100%] flex justify-center items-center bg-[#fff] rounded-l-lg"
+                  class="w-[180px] h-[100%] flex justify-center items-center bg-[#fff] rounded-l-lg Tablet:w-[150px]"
                 >
                   <a
                     class="w-[100px] h-[100px] flex flex-col justify-center items-center"
@@ -16671,7 +16682,7 @@
                       class="w-[50px] h-[50px]"
                     />
                     <div
-                      class="mt-2 text-[17px] text-[#3F4064] font-IRANYekanExtraBold font-bold"
+                      class="mt-2 text-[17px] Tablet:text-[14px] text-[#3F4064] font-IRANYekanExtraBold font-bold"
                     >
                       مشاهده همه
                     </div>
@@ -16687,106 +16698,107 @@
 
       <!--super-market-offer-->
       <div
-        class="w-[100%] h-[110px] mt-5 mb-5 DeskTop:mx-auto flex justify-center"
+        class="super-market w-[100%] h-[110px] mt-5 mb-5 flex justify-center Tablet:h-[190px]"
       >
         <div
-          class="w-[85%] h-[110px] bg-[#ebeeeb] rounded-[15px] story:ml-3 story:mr-3"
+          class="super-market-center w-[85%] h-[100%] bg-[#ebeeeb] rounded-[15px]"
         >
           <a
             href="#"
-            class="flex flex-row items-center justify-center h-[100%] w-[100%]"
+            class="flex flex-row items-center justify-center h-[100%] w-[100%] relative"
           >
-            <div class="flex items-center justify-start pr-10 h-[100%] w-[40%]">
+            <div class="super-market-right flex items-center justify-start DeskTop:pr-10 h-[100%] w-[40%] box-border Tablet:pr-4">
               <img
                 src="./public/image/super-market-offer/super-market-special-img-1.svg"
                 alt="super-market-offer"
+                class="super-market-logo1"
               />
               <img
                 src="./public/image/super-market-offer/super-market-special-img-2.svg"
                 alt="super-market-offer"
-                class="px-4"
+                class="px-4 super-market-logo2"
               />
               <span
-                class="w-[107px] h-[29px] bg-[#39AE00] flex items-center justify-center rounded-[20px] text-[15px] text-[#fff] font-IRANYekanExtraBold font-bold"
+                class="super-market-item w-[107px] h-[29px] bg-[#39AE00] flex items-center justify-center rounded-[20px] text-[15px] text-[#fff] font-IRANYekanExtraBold font-bold"
                 >تا ۶٠٪ تخفیف</span
               >
             </div>
             <div
-              class="flex items-center justify-end w-[60%] h-[100%] relative"
+              class="flex items-center justify-end w-[60%] h-[100%] DeskTop:relative"
             >
               <img
                 src="./public/image/super-market-offer/super-market-special-background.svg"
                 alt="super-market-offer"
-                class="relative"
+                class="relative super-market-bg Tablet:h-[100%]"
               />
               <img
                 src="./public/image/super-market-offer/super-market-special-img-3.png"
                 alt="super-market-offer"
-                class="bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[12%]"
+                class="super-market-item-img-6 bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[12%]"
               />
               <div
-                class="absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[12%] bottom-[20px]"
+                class="super-market-item-text-6 absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[12%] bottom-[20px]"
               >
                 ٪٩
               </div>
               <img
                 src="./public/image/super-market-offer/super-market-special-img-4.png"
                 alt="super-market-offer"
-                class="bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[23%]"
+                class="super-market-item-img-5 bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[23%]"
               />
               <div
-                class="absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[23%] bottom-[20px]"
+                class="super-market-item-text-5 absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[23%] bottom-[20px]"
               >
                 ٪۱۴
               </div>
               <img
                 src="./public/image/super-market-offer/super-market-special-img-5.png"
                 alt="super-market-offer"
-                class="bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[34%]"
+                class="super-market-item-img-4 bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[34%]"
               />
               <div
-                class="absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[34%] bottom-[20px]"
+                class="super-market-item-text-4 absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[34%] bottom-[20px]"
               >
                 ٪۱۰
               </div>
               <img
                 src="./public/image/super-market-offer/super-market-special-img-6.png"
                 alt="super-market-offer"
-                class="bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[45%]"
+                class="super-market-item-img-3 bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[45%]"
               />
               <div
-                class="absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[45%] bottom-[20px]"
+                class="super-market-item-text-3 absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[45%] bottom-[20px]"
               >
                 ٪٩
               </div>
               <img
                 src="./public/image/super-market-offer/super-market-special-img-7.png"
                 alt="super-market-offer"
-                class="bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[56%]"
+                class="super-market-item-img-2 bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[56%]"
               />
               <div
-                class="absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[56%] bottom-[20px]"
+                class="super-market-item-text-2 absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[56%] bottom-[20px]"
               >
                 ٪۱۴
               </div>
               <img
                 src="./public/image/super-market-offer/super-market-special-img-8.png"
                 alt="super-market-offer"
-                class="bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[67%]"
+                class="super-market-item-img-1 bg-white rounded-[50%] w-[70px] h-[70px] p-2 mx-2 absolute right-[67%]"
               />
               <div
-                class="absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[67%] bottom-[20px]"
+                class="super-market-item-text-1 absolute z-10 w-[34px] h-[20px] bg-[#d32f2f] rounded-[14px] text-[13px] text-[#fff] font-IRANYekanExtraBold font-bold flex justify-center items-center right-[67%] bottom-[20px]"
               >
                 ٪۱۴
               </div>
               <div
-                class="h-[50px] w-[130px] bg-white rounded-[20px] text-[#39AE00] text-[14px] font-IRANYekanExtraBold font-bold absolute flex items-center justify-center right-[80%]"
+                class="super-market-btn h-[50px] w-[130px] bg-white rounded-[20px] text-[#39AE00] text-[14px] font-IRANYekanExtraBold font-bold absolute flex items-center justify-center right-[80%]"
               >
-                بیش از ۱۰۰ کالا
+               <span class="Tablet:hidden">بیش از ۱۰۰ کالا</span> 
                 <img
                   src="./public/image/super-market-offer/super-market-special-green-arrow.svg"
                   alt="arrow"
-                  class="w-[18px] mr-2"
+                  class="w-[18px] Tablet:w-[22px] DeskTop:mr-2"
                 />
               </div>
             </div>
@@ -16796,17 +16808,17 @@
 
       <!--banner1-->
       <div
-        class="w-[100%] h-[240px] flex justify-center Tablet:h-[500px] Tablet:mb-4 Tablet:mt-4"
+        class="banner1 w-[100%] h-[240px] flex justify-center Tablet:h-[500px] Tablet:mb-4 Tablet:mt-4"
       >
         <div
-          class="w-[85%] h-[inherit] flex flex-row justify-center items-center Tablet:flex-col bg-slate-400"
+          class="banner1-center w-[85%] h-[inherit] flex flex-row justify-center items-center Tablet:flex-col "
         >
           <div
-            class="flex flex-row w-[50%] h-[100%] Tablet:w-[100%] Tablet:mb-4 bg-slate-500 justify-center items-center"
+            class="banner1-row1 flex flex-row w-[50%] h-[100%] Tablet:w-[100%] Tablet:mb-4 justify-center items-center"
           >
             <a
               href="#"
-              class="w-[50%] h-[100%] ml-4 block Tablet:w-[calc(50%_-_5px)]"
+              class="banner1-item1 w-[50%] h-[100%] DeskTop:block DeskTop:ml-2"
             >
               <img
                 src="./public/image/banner/1.jpg"
@@ -16816,7 +16828,7 @@
             </a>
             <a
               href="#"
-              class="w-[50%] h-[100%] desktop:ml-4 block Tablet:w-[calc(50%_-_5px)]"
+              class="banner1-item2 w-[50%] h-[100%] DeskTop:block DeskTop:ml-2"
             >
               <img
                 src="./public/image/banner/2.jpg"
@@ -16826,26 +16838,26 @@
             </a>
           </div>
           <div
-            class="flex flex-row w-[50%] h-[100%] Tablet:w-[100%] bg-slate-700 justify-center items-center"
+            class="banner1-row2 flex flex-row w-[50%] h-[100%] Tablet:w-[100%] justify-center items-center"
           >
             <a
               href="#"
-              class="w-[50%] h-[100%] ml-4 block Tablet:w-[calc(50%_-_5px)]"
+              class="banner1-item3 w-[50%] h-[100%] DeskTop:ml-2 DeskTop:block"
             >
               <img
                 src="./public/image/banner/3.jpg"
                 alt="banner"
-                class="rounded-[15px]"
+                class=" rounded-[15px]"
               />
             </a>
             <a
               href="#"
-              class="w-[50%] h-[100%] block Tablet:w-[calc(50%_-_5px)]"
+              class="banner1-item4 w-[50%] h-[100%] DeskTop:block"
             >
               <img
                 src="./public/image/banner/4.jpg"
                 alt="banner"
-                class="rounded-[15px]"
+                class=" rounded-[15px]"
               />
             </a>
           </div>
@@ -16854,7 +16866,7 @@
 
       <!--shop category-->
       <div
-        class="w-[100%] h-[400px] flex justify-center mx-auto lg:px-4 lg:mb-5 Tablet:hidden"
+        class="w-[100%] h-[400px] flex justify-center mx-auto Tablet:mt-[200px] lg:px-4 lg:mb-5"
       >
         <div
           class="w-[85%] h-[inherit] py-3 lg:pt-4 lg:pb-10 flex flex-col items-center"
@@ -17210,22 +17222,37 @@
       </div>
 
       <!--banner2-->
-      <div class="w-[100%] h-[260px] flex justify-center">
-        <div class="w-[85%] h-[inherit] flex flex-row justify-center">
-          <a href="#" class="w-[50%] h-[100%] ml-4">
-            <img
-              src="./public/image/banner/b2.jpg"
-              alt="banner"
-              class="rounded-[15px]"
-            />
-          </a>
-          <a href="#" class="w-[50%] h-[100%]">
+      <div class="banner2 w-[100%] h-[260px] flex justify-center Tablet:h-[500px] Tablet:mb-4 Tablet:mt-4">
+        <div class="banner2-center w-[85%] h-[inherit] flex flex-row justify-between Tablet:flex-col">
+          <div
+          class="banner2-row1 flex flex-row w-[50%] h-[100%] Tablet:w-[100%] Tablet:mb-4 justify-center items-center"
+        >
+          <a
+            href="#"
+            class="banner2-item1 w-[100%] h-[100%] DeskTop:block DeskTop:ml-2"
+          >
             <img
               src="./public/image/banner/b2-2.jpg"
               alt="banner"
               class="rounded-[15px]"
             />
           </a>
+        </div>
+        <div
+          class="banner2-row2 flex flex-row w-[50%] h-[100%] Tablet:w-[100%] justify-center items-center"
+        >
+          <a
+            href="#"
+            class="banner2-item2 w-[100%] h-[100%] DeskTop:block"
+          >
+            <img
+              src="./public/image/banner/b2.jpg"
+              alt="banner"
+              class=" rounded-[15px]"
+            />
+          </a>
+          </a>
+        </div>
         </div>
       </div>
 
@@ -18478,7 +18505,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18516,7 +18543,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18554,7 +18581,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18592,7 +18619,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18630,7 +18657,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18668,7 +18695,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18710,7 +18737,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18748,7 +18775,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18786,7 +18813,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18824,7 +18851,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18862,7 +18889,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18900,7 +18927,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18942,7 +18969,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -18980,14 +19007,14 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
                 class="mt-[5px] text-[12px] text-[#a1a3a8] font-IRANYekanExtraBold font-bold pr-[60px]"
                 >٥,٢٩٩,٠٠٠</del
               >
-              <div class="mt-4 mb-[1px]">
+              <div class="mt-4 mb-[1px] ">
                 <div
                   class="Timeline bg-[#f0f0f1] w-[150px] h-[4px] rounded-[20px] relative hidden"
                 >
@@ -19018,7 +19045,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -19056,7 +19083,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -19094,7 +19121,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del
@@ -19132,7 +19159,7 @@
                 <img
                   src="./public/image/special-offer/special-offers-toman-icon.svg"
                   alt="special-offer"
-                  class="toman"
+                  class="toman Tablet:h-[11px]"
                 />
               </div>
               <del

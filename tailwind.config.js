@@ -19,8 +19,8 @@ export default {
         'box2':{'min':'900px'},
         'lg':{'min':'1024px'},
         'xl':{'max':'1280px'},
-        'story':{'min':'1336px'},
-        '2xl':{'min':'1536px'}
+        'story':{'max':'1336px'},
+        '2xl':{'min':'1536px'},
     }
   },
   plugins: [],

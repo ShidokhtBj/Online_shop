@@ -1,0 +1,186 @@
+.super-market{
+    @font-face {
+        font-family: IRANYekanWeb-ExtraBold;
+        src:  url(./public/font/IRANYekanWeb-ExtraBold.woff) format("woff");
+        
+    }
+    .super-market-center{
+        @media (max-width: 1437px) and (min-width:1022px) {
+            Width:90%;
+            margin-right:50px;
+           margin-left:50px;
+           }
+        @media (max-width: 1023px) {
+            Width:95%;
+           }
+           .super-market-logo1{
+            @media (max-width: 1023px) {
+              width:45px;
+               }
+           }
+           .super-market-logo2{
+            @media (max-width: 1244px) {
+                Width:240px;
+                 }
+                 @media (max-width: 1140px) {
+                    Width:220px;
+                         }
+                         @media (max-width: 1060px) {
+                            Width:200px;
+                             }
+                             @media (max-width: 1023px) {
+                                padding-top: 10px;
+                                Width:240px;
+                                 }
+        }
+        .super-market-item{
+            @media (max-width: 1280px) {
+                font-size:11px;
+                 }
+            @media (max-width: 1244px) {
+                Width:100px;
+                font-size:12px;
+                 }
+           @media (max-width: 1170px) {
+                    Width:100px;
+                    font-size:11px;
+                     }
+                     @media (max-width: 1023px) {
+                        position: absolute;
+                        height: 25px;
+                        right: 35px;
+                        bottom: 90px;
+                        font-size:14px;
+                         }
+        }
+        .super-market-item-img-1,.super-market-item-text-1{
+            @media (max-width: 1244px) {
+              display: none;
+               }
+        }
+        .super-market-item-img-2,.super-market-item-text-2{
+            @media (max-width: 1244px) {
+                right:60%;
+                 }
+            @media (max-width: 1140px) {
+              display: none;
+               }
+        }
+        .super-market-item-img-3,.super-market-item-text-3{
+            @media (max-width: 1244px) {
+                right:47%;
+                 }
+            @media (max-width: 1140px) {
+                right:57%;
+                     }
+            @media (max-width: 1060px) {
+              display: none;
+               }
+        }
+        .super-market-item-img-4,.super-market-item-text-4{
+            @media (max-width: 1244px) {
+                right:34%;
+                 }
+            @media (max-width: 1140px) {
+                    right:44%;
+                         }
+                         @media (max-width: 1060px) {
+                            right:55%;
+                             }
+                             @media (max-width: 1023px) {
+                                right:200px;
+                                bottom: 10px;
+                                
+                                 }
+        }
+        .super-market-item-img-5,.super-market-item-text-5{
+            @media (max-width: 1244px) {
+                right:21%;
+                 }
+            @media (max-width: 1140px) {
+                    right:31%;
+                         }
+                         @media (max-width: 1060px) {
+                            right:40%;
+                             }
+                             @media (max-width: 1023px) {
+                                right:100px;
+                                bottom: 10px;
+                                 }
+        }
+        .super-market-item-img-6,.super-market-item-text-6{
+            @media (max-width: 1244px) {
+                right:8%;
+                 }
+                 @media (max-width: 1140px) {
+                    right:18%;
+                         }
+                         @media (max-width: 1060px) {
+                            right:25%;
+                             }
+                             @media (max-width: 1023px) {
+                                right:5px;
+                                bottom: 10px;
+                                 }
+        }
+        .super-market-btn{
+            
+                 @media (min-width: 1024px) {
+                    width:130px;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                    position: absolute;
+                    right:80%;
+                        box-sizing: border-box;
+                      }
+                      @media (max-width: 1244px) and (min-width: 1024px) {
+                        
+                        right:75%;
+                            
+                          }
+                 @media (max-width: 1023px) {
+                    all: unset;
+                    width:50px;
+                    height: 50px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+                    position: absolute;
+                        left: 2%;
+                        bottom: 10px;
+                        box-sizing: border-box;
+                     }
+                     img{
+                        @media (max-width: 1023px) {
+                           margin-right: 25%;
+                            width:22px;
+                             }
+                     }
+                     span{
+                        @media (min-width: 1024px) {
+                            color: #39AE00;
+                            font-size: 14px;
+                            font-weight: bold;
+                            font-family: IRANYekanWeb-ExtraBold;
+                            text-align: center;
+                              }
+                              
+                              @media (max-width: 1023px) {
+                                display: none;
+                                  }
+                     }
+        }
+        .super-market-right{
+            @media (max-width: 1023px) {
+                padding-top: 20px;
+                align-items: flex-start;
+                 }
+        }
+    }
+}
