@@ -1,0 +1,6 @@
+#main{
+    background: #FFF;
+    @media (max-width: 729px) {
+        overflow-x: hidden;
+      }
+}
