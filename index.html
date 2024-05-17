@@ -48,14 +48,13 @@
     
   </head>
   <body>
-    <div class="main w-[100%] h-[100vh] min-h-auto" id="main">
+    <div class="main w-[100%] h-[100vh] min-h-auto overflow-x-hidden" id="main">
       <!--Navbar-Top-->
       <header
-        class="w-[100%] flex flex-col fixed top-0 box-border transition-all p-0 m-0 bg-white z-50"
+        class="w-[100%] flex flex-col fixed top-0 right-0 box-border transition-all p-0 m-0 bg-white z-50"
         id="navbar"
       >
-        <div
-          class="header__top flex flex-row w-[100%] h-[50px] items-center justify-center relative z-50 Tablet:h-[37px]"
+        <div class="header__top flex flex-row w-[100%] h-[50px] items-center justify-center relative z-50 Tablet:h-[37px] phone:h-[27px]"
         >
           <a href="#" class="w-[100%] h-[100%] block">
             <img
@@ -65,8 +64,7 @@
             />
           </a>
         </div>
-        <div
-          class="header__center w-full h-[75px] box-border z-40 Tablet:h-[50px] Tablet:shadow-[0px_1px_3px_0px_#00000024] bg-white"
+        <div class="header__center w-[100%] h-[75px] box-border z-40 Tablet:h-[50px] Tablet:shadow-[0px_1px_3px_0px_#00000024] bg-white"
         >
           <div
             class="flex flex-row flex-nowrap w-[100%] h-[100%] items-center justify-center mx-auto px-4 py-3 grow relative Tablet:px-2 Tablet:py-1"
@@ -155,8 +153,7 @@
             </div>
           </div>
         </div>
-        <nav
-          class="header__bottom flex flex-row flex-nowrap w-[100%] box-border items-center z-2 justify-between px-5 grow relative bg-white border-opacity-70 border-b-[1px] border-[#D0D0D0] shadow-[0px_3px_3px_-3px_#D0D0D0] transition-all Tablet:hidden "
+        <nav class="header__bottom flex flex-row flex-nowrap w-[100%] box-border items-center z-2 justify-between px-5 grow relative bg-white border-opacity-70 border-b-[1px] border-[#D0D0D0] shadow-[0px_3px_3px_-3px_#D0D0D0] transition-all Tablet:hidden phone:hidden"
           id="navbar-bottom"
         >
           
@@ -9985,7 +9982,7 @@
 
       <!--item-box-->
       <div
-        class="item-box w-[100%] h-[130px] flex justify-center mx-auto Tablet:hidden"
+        class="item-box w-[100%] h-[130px] flex justify-center mx-auto"
       >
         <div class="w-[85%] h-[100%] flex flex-row items-center justify-center">
           <a
@@ -10129,8 +10126,8 @@
       </div>
 
       <!--special-offer-->
-      <div class="special-offer w-[100%] h-[300px] flex justify-center">
-        <div class="special__offer__center w-[85%] h-[100%] rounded-[15px] pt-5 pb-5 bg-[#EF3A4F] flex flex-row justify-center items-center border-[1px] border-[#EF3A4F]">
+      <div class="special-offer w-[100%] h-[300px] flex justify-center Tablet:h-[240px]">
+        <div class="special__offer__center w-[85%] Tablet:w-[100%] h-[100%] Tablet:rounded-none rounded-[15px] pt-5 pb-5 bg-[#EF3A4F] flex flex-row justify-center items-center border-[1px] border-[#EF3A4F]">
           <div class="swiper special__offer__slider w-[100%] h-[100%]">
             <div class="swiper-wrapper">
               <div class="swiper-slide !w-fit h-[100%]">
@@ -10497,41 +10494,45 @@
       </div>
 
       <!--banner1-->
-      <div class="w-[100%] h-[240px] flex justify-center">
-        <div class="w-[85%] h-[inherit] flex flex-row justify-center">
-          <a href="#" class="w-[25%] h-[100%] ml-4">
-            <img
-              src="./public/image/banner/1.jpg"
-              alt="banner"
-              class="rounded-[15px]"
-            />
-          </a>
-          <a href="#" class="w-[25%] h-[100%] ml-4">
-            <img
-              src="./public/image/banner/2.jpg"
-              alt="banner"
-              class="rounded-[15px]"
-            />
-          </a>
-          <a href="#" class="w-[25%] h-[100%] ml-4">
-            <img
-              src="./public/image/banner/3.jpg"
-              alt="banner"
-              class="rounded-[15px]"
-            />
-          </a>
-          <a href="#" class="w-[25%] h-[100%]">
-            <img
-              src="./public/image/banner/4.jpg"
-              alt="banner"
-              class="rounded-[15px]"
-            />
-          </a>
+      <div class="w-[100%] h-[240px] flex justify-center Tablet:h-[500px] Tablet:mb-4 Tablet:mt-4">
+        <div class="w-[85%] h-[inherit] flex flex-row justify-center items-center Tablet:flex-col bg-slate-400">
+          <div class="flex flex-row w-[50%] h-[100%] Tablet:w-[100%] Tablet:mb-4 bg-slate-500 justify-center items-center">
+            <a href="#" class="w-[50%] h-[100%] ml-4 block Tablet:w-[calc(50%_-_5px)]">
+              <img
+                src="./public/image/banner/1.jpg"
+                alt="banner"
+                class="rounded-[15px]"
+              />
+            </a>
+            <a href="#" class="w-[50%] h-[100%] desktop:ml-4 block Tablet:w-[calc(50%_-_5px)]">
+              <img
+                src="./public/image/banner/2.jpg"
+                alt="banner"
+                class="rounded-[15px]"
+              />
+            </a>
+          </div>
+          <div class="flex flex-row w-[50%] h-[100%] Tablet:w-[100%] bg-slate-700 justify-center items-center">
+            <a href="#" class="w-[50%] h-[100%] ml-4 block Tablet:w-[calc(50%_-_5px)]">
+              <img
+                src="./public/image/banner/3.jpg"
+                alt="banner"
+                class="rounded-[15px]"
+              />
+            </a>
+            <a href="#" class="w-[50%] h-[100%] block Tablet:w-[calc(50%_-_5px)]">
+              <img
+                src="./public/image/banner/4.jpg"
+                alt="banner"
+                class="rounded-[15px]"
+              />
+            </a>
+          </div>
         </div>
       </div>
 
       <!--shop category-->
-      <div class="w-[100%] h-[400px] flex justify-center mx-auto lg:px-4 lg:mb-5">
+      <div class="w-[100%] h-[400px] flex justify-center mx-auto lg:px-4 lg:mb-5 Tablet:hidden">
         <div class="w-[85%] h-[inherit] py-3 lg:pt-4 lg:pb-10 flex flex-col items-center">
           <div
             class="mb-6 lg:mb-9 text-center text-[21px] text-[#3a3655] font-IRANYekanExtraBold font-bold w-[100%]"
@@ -12719,6 +12720,52 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+        390: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+        492: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+        580: {
+          slidesPerView: 6,
+          spaceBetween: 10,
+        },
+         679: {
+          slidesPerView: 7,
+          spaceBetween: 10,
+        },
+         773: {
+          slidesPerView: 8,
+          spaceBetween: 10,
+        },
+         875: {
+          slidesPerView: 9,
+          spaceBetween: 10,
+        },
+         1000: {
+          slidesPerView: 10,
+          spaceBetween: 10,
+        },
+         1110: {
+          slidesPerView: 9,
+          spaceBetween: 9,
+        },
+         1216: {
+          slidesPerView: 10,
+          spaceBetween: 9,
+        },
+         1304: {
+          slidesPerView: 11,
+          spaceBetween: 9,
+        },
+         1339: {
+          slidesPerView: 12,
+          spaceBetween: 9,
+        },
+      },
       });
 
       var swiper = new Swiper(".Main_slider", {

@@ -46,24 +46,6 @@ window.addEventListener("scroll", function () {
   lastScrollTop = currentScrollTop;
 });
 
-//owl setup
-$(document).ready(function () {
-
-  //item-box(tablet)
-  $("#slider-2").owlCarousel({
-    rtl: true,
-    items: 6,
-    startPosition: 0,
-    autoplay: false,
-    margin: 0,
-    loop: false,
-    mouseDrag: true,
-    nav: false,
-    dots: true,
-  });
-
-
-});
 
 
 

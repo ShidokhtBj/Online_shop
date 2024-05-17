@@ -12,7 +12,7 @@ export default {
       },
     },
     screens:{
-        'Watch':{'max': '370px'},
+        'phone':{'max': '450'},
         'Tablet': {'max': '1023px'},
         'DeskTop': {'min': '1024px'},
         'box':{'min':'550px'},
