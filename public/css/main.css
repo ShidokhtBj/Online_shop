@@ -838,6 +838,54 @@ video {
   margin-top: 5px;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-\[14\] {
+  margin-bottom: 14;
+}
+
+.mb-\[200px\] {
+  margin-bottom: 200px;
+}
+
+.mb-\[00px\] {
+  margin-bottom: 00px;
+}
+
+.mb-\[250px\] {
+  margin-bottom: 250px;
+}
+
+.mb-\[300px\] {
+  margin-bottom: 300px;
+}
+
+.mb-\[350px\] {
+  margin-bottom: 350px;
+}
+
+.mb-\[380px\] {
+  margin-bottom: 380px;
+}
+
+.mb-\[370px\] {
+  margin-bottom: 370px;
+}
+
+.mb-\[360px\] {
+  margin-bottom: 360px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1088,6 +1136,18 @@ video {
 
 .h-\[200px\] {
   height: 200px;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[10\] {
+  height: 10;
+}
+
+.h-\[100\] {
+  height: 100;
 }
 
 .\!w-fit {
@@ -1847,6 +1907,14 @@ video {
   font-size: 40px;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[5px\] {
+  font-size: 5px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1957,6 +2025,24 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[0px_-1px_1px_1px_\#D0D0D0\] {
+  --tw-shadow: 0px -1px 1px 1px #D0D0D0;
+  --tw-shadow-colored: 0px -1px 1px 1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0px_-1px_2px_1px_\#D0D0D0\] {
+  --tw-shadow: 0px -1px 2px 1px #D0D0D0;
+  --tw-shadow-colored: 0px -1px 2px 1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0px_-1px_3px_1px_\#D0D0D0\] {
+  --tw-shadow: 0px -1px 3px 1px #D0D0D0;
+  --tw-shadow-colored: 0px -1px 3px 1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-0 {
   outline-width: 0px;
 }
@@ -1998,6 +2084,10 @@ video {
 
   .phone\:h-\[27px\] {
     height: 27px;
+  }
+
+  .phone\:h-\[100px\] {
+    height: 100px;
   }
 }
 
@@ -2044,6 +2134,18 @@ video {
 
   .Tablet\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .Tablet\:mb-\[200px\] {
+    margin-bottom: 200px;
+  }
+
+  .Tablet\:mb-\[100px\] {
+    margin-bottom: 100px;
+  }
+
+  .Tablet\:mb-\[110px\] {
+    margin-bottom: 110px;
   }
 
   .Tablet\:block {
@@ -2136,6 +2238,10 @@ video {
 
   .Tablet\:w-full {
     width: 100%;
+  }
+
+  .Tablet\:w-\[100\] {
+    width: 100;
   }
 
   .Tablet\:flex-col {

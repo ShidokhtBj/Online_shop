@@ -38,6 +38,10 @@
     <link rel="stylesheet" href="./public/css/super-market-offer.css" type="text/css" />
     <link rel="stylesheet" href="./public/css/banner1.css" type="text/css" />
     <link rel="stylesheet" href="./public/css/banner2.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/shop-category.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/popular-brands.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/category-based-on-visit.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/digiclab.css" type="text/css" />
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
   </head>
   <body>
@@ -15209,7 +15213,7 @@
       <!--Navbar-footer-->
       <div
         id="Navbar-footer"
-        class="DeskTop:hidden bg w-full z-50 fixed right-0 bottom-0 border-opacity-70 border-t-[1px] border-[#D0D0D0] shadow-[0px_-1px_4px_1px_#D0D0D0] bg-white"
+        class="DeskTop:hidden bg w-full z-50 fixed right-0 bottom-0 border-opacity-70 border-t-[1px] border-[#D0D0D0] shadow-[0px_-1px_3px_1px_#D0D0D0] bg-white"
       >
         <div class="flex flex-1 justify-between items-center">
           <a
@@ -15300,7 +15304,7 @@
       </div>
 
       <!-- Support icon -->
-      <div class="support fixed right-[4%] bottom-[2%] z-10">
+      <div class="support fixed right-[4%] bottom-[2%] z-10 Tablet:hidden">
         <a
           class="support-icon bg-[#EE384E] w-[50px] h-[50px] rounded-[50%] flex justify-center items-center"
         >
@@ -16726,12 +16730,12 @@
               >
             </div>
             <div
-              class="flex items-center justify-end w-[60%] h-[100%] DeskTop:relative"
+              class="flex items-center justify-end w-[60%] h-[100%] DeskTop:relative Tablet:h-[100%] Tablet:w-[100%]"
             >
               <img
                 src="./public/image/super-market-offer/super-market-special-background.svg"
                 alt="super-market-offer"
-                class="relative super-market-bg Tablet:h-[100%]"
+                class="relative super-market-bg Tablet:h-[100%] Tablet:w-[100%]"
               />
               <img
                 src="./public/image/super-market-offer/super-market-special-img-3.png"
@@ -16810,7 +16814,7 @@
 
       <!--banner1-->
       <div
-        class="banner1 w-[100%] h-[240px] flex justify-center Tablet:h-[240px] Tablet:mb-4"
+        class="banner1 w-[100%] h-[240px] flex justify-center Tablet:h-[200px] Tablet:mb-4"
       >
         <div
           class="banner1-center w-[85%] h-[inherit] flex flex-row justify-center items-center Tablet:flex-col "
@@ -16868,18 +16872,188 @@
 
       <!--shop category-->
       <div
-        class="w-[100%] h-[400px] flex justify-center mx-auto Tablet:mt-[200px] lg:px-4 lg:mb-5"
+        class="shop_category w-[100%] h-[400px] flex justify-center mx-auto Tablet:mt-[200px] lg:mb-5"
       >
         <div
-          class="w-[85%] h-[inherit] py-3 lg:pt-4 lg:pb-10 flex flex-col items-center"
+          class="shop_category_center w-[85%] h-[inherit] lg:pt-4 lg:pb-10 flex flex-col items-center"
         >
           <div
-            class="mb-6 lg:mb-9 text-center text-[21px] text-[#3a3655] font-IRANYekanExtraBold font-bold w-[100%]"
+            class="shop_category_title mb-6 lg:mb-9 flex justify-center items-center text-center text-[21px] text-[#3a3655] font-IRANYekanExtraBold font-bold w-[100%]"
           >
             خرید بر اساس دسته‌بندی
           </div>
-          <div class="flex flex-col justify-center items-center">
-            <div class="flex w-full flex-row items-center justify-center gap-2">
+          <div class="category flex flex-col justify-center items-center">
+            <div class="swiper category__center hidden">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_item mb-6">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/1.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">موبایل</span>
+                    </a>
+                  </div>
+                  <div class="category_item">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/9.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">تجهیزات پزشکی و سلامت</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_item mb-6">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/2.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">کتاب، لوازم تحریر و هنر</span>
+                    </a>
+                  </div>
+                  <div class="category_item">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/10.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">ورزش و سفر</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_item mb-6">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/3.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">کالای دیجیتال</span>
+                    </a>
+                  </div>
+                  <div class="category_item">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/11.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">کارت هدیه</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_item mb-6">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/4.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">خانه و آشپزخانه</span>
+                    </a>
+                  </div>
+                  <div class="category_item">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/12.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">کالاهای سوپرمارکتی</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_item mb-6">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/5.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">لوازم خانگی برقی</span>
+                    </a>
+                  </div>
+                  <div class="category_item">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/13.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">اسباب بازی، کودک و نوزاد</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_item mb-6">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/6.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">مد و پوشاک</span>
+                    </a>
+                  </div>
+                  <div class="category_item">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/14.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">ابزار آلات و تجهیزات</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_item mb-6">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/7.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">ساعت، طلا و جواهرات</span>
+                    </a>
+                  </div>
+                  <div class="category_item">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/15.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">خودرو و موتورسیکلت</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_item mb-6">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/8.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">آرایشی بهداشتی</span>
+                    </a>
+                  </div>
+                  <div class="category_item">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/16.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">محصولات بومی و محلی</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="hidden category_pause w-[100%] h-[100%] justify-center items-center">
+            <div class="category_pause_row1 w-full flex-row items-center justify-center gap-2">
               <span class="h-40 px-4 flex-1 max-w-[143px]">
                 <a
                   class="flex flex-col items-center user-select-none w-full lg:p-0 lg:mx-0"
@@ -17049,7 +17223,7 @@
                 </a>
               </span>
             </div>
-            <div class="flex w-full flex-row items-center justify-center gap-2">
+            <div class="w-full category_pause_row2 flex-row items-center justify-center gap-2">
               <span class="h-40 px-4 flex-1 max-w-[143px]">
                 <a
                   class="flex flex-col items-center user-select-none w-full lg:p-0 lg:mx-0"
@@ -17220,11 +17394,177 @@
               </span>
             </div>
           </div>
+          <div class="hidden category_phone">
+            <div class="swiper category_phone_center">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/1.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">موبایل</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/2.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">کتاب و هنر</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/3.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">کالای دیجیتال</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/4.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">خانه و آشپزخانه</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/5.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">لوازم برقی</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/6.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">مد و پوشاک</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/7.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">ساعت , طلا</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/8.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">آرایشی بهداشتی</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/9.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">پزشکی و سلامت</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/10.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">ورزش و سفر</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/11.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">کارت هدیه</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/12.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">کالای سوپرمارکتی</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/13.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">اسباب بازی، کودک</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/14.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">ابزار و تجهیزات</span>
+                    </a>
+                  </div>
+                  <div class="category_phone_item mb-10">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/15.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">خودرو و موتورسیکلت</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide h-[100%]">
+                  <div class="category_phone_item mb-[360px]">
+                    <a href="#">
+                      <img
+                        src="./public/image/shop-category/16.png"
+                        alt="category_item"
+                      />
+                      <span class=" text-[14px] text-[#3a3655] font-IRANYekanExtraBold font-bold">محصولات بومی و محلی</span>
+                    </a>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!--banner2-->
-      <div class="banner2 w-[100%] h-[260px] flex justify-center Tablet:h-[500px] Tablet:mb-4 Tablet:mt-4">
+      <div class="banner2 w-[100%] h-[200px] flex justify-center Tablet:h-[500px] mb-3">
         <div class="banner2-center w-[85%] h-[inherit] flex flex-row justify-between Tablet:flex-col">
           <div
           class="banner2-row1 flex flex-row w-[50%] h-[100%] Tablet:w-[100%] Tablet:mb-4 justify-center items-center"
@@ -17259,9 +17599,9 @@
       </div>
 
       <!--popular brands-->
-      <div class="w-[100%] h-[225px] flex justify-center mt-5 mb-5">
+      <div class="popular__brand w-[100%] h-[225px] flex justify-center">
         <div
-          class="w-[85%] h-[inherit] flex flex-col justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
+          class="popular__brand__center w-[85%] h-[inherit] flex flex-col justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
         >
           <div
             class="flex flex-row justify-center items-center w-[100%] h-[20%] text-center text-[20px] text-[#3a3655] font-IRANYekanExtraBold font-bold mt-2"
@@ -17522,9 +17862,9 @@
       </div>
 
       <!--category Based on visit 1-->
-      <div class="w-[100%] h-[420px] flex justify-center mt-5 mb-5">
+      <div class="category_visit1 w-[100%] h-[420px] flex justify-center mt-5 mb-5">
         <div
-          class="w-[85%] h-[inherit] flex flex-row justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
+          class="category_visit1_center w-[85%] h-[inherit] flex flex-row justify-center rounded-[20px] border-[1px] border-[#D0D0D0]"
         >
           <div
             class="flex justify-start flex-col w-[25%] h-[100%] border-l-[1px] border-[#D0D0D0] p-4"
@@ -17716,9 +18056,9 @@
       </div>
 
       <!--digiclab-->
-      <div class="w-[100%] h-[90px] flex justify-center mt-5 mb-5">
+      <div class="digiclab w-[100%] h-[90px] flex justify-center mt-5 mb-5">
         <div
-          class="w-[85%] h-[inherit] flex flex-row justify-center rounded-[20px] bg-gradient-to-r from-[#35A6C8] to-[#007295]"
+          class="digiclab_center w-[85%] h-[inherit] flex flex-row justify-center rounded-[20px] bg-gradient-to-r from-[#35A6C8] to-[#007295]"
         >
           <div
             class="flex justify-start items-center w-[25%] h-[inherit] pr-10"
@@ -20195,6 +20535,25 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      var swiper = new Swiper(".category__center", {
+        slidesPerView: 6,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      
+      var swiper = new Swiper(".category_phone_center", {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+
     </script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./public/js/main.js"></script>

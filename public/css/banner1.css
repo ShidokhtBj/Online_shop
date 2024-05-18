@@ -1,4 +1,7 @@
 .banner1{
+    @media (max-width: 1023px) {
+       position: relative;
+       }
     .banner1-center{
         @media (max-width: 1437px) and (min-width:1022px) {
             width:90%;
@@ -6,8 +9,29 @@
            margin-left:50px;
            }
         @media (max-width: 1023px) {
+            position: absolute;
+            top: 100px;
             width:95%;
-            margin-top: 40px;
+           }
+           @media (max-width: 590px) {
+            position: absolute;
+            top: 90px;
+            width:95%;
+           }
+           @media (max-width: 518px) {
+            position: absolute;
+            top: 65px;
+            width:95%;
+           }
+           @media (max-width: 444px) {
+            position: absolute;
+            top: 50px;
+            width:95%;
+           }
+           @media (max-width: 444px) {
+            position: absolute;
+            top: 40px;
+            width:95%;
            }
         .banner1-row1{
             justify-content: space-between;
@@ -15,7 +39,6 @@
                 @media (max-width: 1023px) {
                     display:flex;
                     justify-content: flex-start;
-                   
                     width:50%;
                    }
                    img{
@@ -31,8 +54,15 @@
                 @media (max-width: 1023px) {
                     display:flex;
                     justify-content: flex-end;
-                   
                     width:50%;
+                   }
+                   img{
+                    @media (max-width: 1023px) {
+                        display:flex;
+                        justify-content: flex-start;
+                        
+                        width:95%;
+                       }
                    }
             }
         }
@@ -42,7 +72,6 @@
                 @media (max-width: 1023px) {
                     display:flex;
                     justify-content: flex-start;
-                   
                     width:50%;
                    }
                    img{
@@ -58,8 +87,15 @@
                 @media (max-width: 1023px) {
                     display:flex;
                     justify-content: flex-end;
-                    
                     width:50%;
+                   }
+                   img{
+                    @media (max-width: 1023px) {
+                        display:flex;
+                        justify-content: flex-start;
+                       
+                        width:95%;
+                       }
                    }
             }
         }

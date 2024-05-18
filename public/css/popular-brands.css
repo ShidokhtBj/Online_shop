@@ -1,0 +1,29 @@
+.popular__brand{
+    .popular__brand__center{
+        @media (max-width: 1437px) and (min-width:1022px) {
+            width:90%;
+            margin-right:50px;
+           margin-left:50px;
+           }
+        @media (max-width: 1023px){
+            width:95%;
+            margin-top: 460px;
+           }
+        @media (max-width: 1000px) {
+            width:95%;
+            margin-top: 430px;
+           }   
+        @media (max-width: 900px) {
+            width:95%;
+            margin-top: 470px;
+           }   
+        /*   @media (max-width: 900px) {
+            width:95%;
+            margin-top: 370px;
+           }    */
+           @media (max-width: 654px) {
+            width:95%;
+            margin-top: 0px;
+           }      
+    }
+}
