@@ -1,4 +1,5 @@
 .popular__brand{
+    position: relative;
     .popular__brand__center{
         @media (max-width: 1437px) and (min-width:1022px) {
             width:90%;
@@ -7,23 +8,53 @@
            }
         @media (max-width: 1023px){
             width:95%;
-            margin-top: 460px;
+            position: absolute;
+            top: 650px;
            }
-        @media (max-width: 1000px) {
+        @media (max-width: 650px){
             width:95%;
-            margin-top: 430px;
-           }   
-        @media (max-width: 900px) {
+            position: absolute;
+            top: 620px;
+           }
+           @media (max-width: 600px){
             width:95%;
-            margin-top: 470px;
-           }   
-        /*   @media (max-width: 900px) {
+            position: absolute;
+            top: 590px;
+           }
+           @media (max-width: 550px){
             width:95%;
-            margin-top: 370px;
-           }    */
-           @media (max-width: 654px) {
+            position: absolute;
+            top: 550px;
+           }
+           @media (max-width: 516px){
             width:95%;
-            margin-top: 0px;
-           }      
+            position: absolute;
+            top: 485px;
+           }
+           @media (max-width: 480px){
+            width:95%;
+            position: absolute;
+            top: 450px;
+           }
+           @media (max-width: 444px){
+            width:95%;
+            position: absolute;
+            top: 380px;
+           }
+           @media (max-width: 419px){
+            width:95%;
+            position: absolute;
+            top: 350px;
+           }
+           @media (max-width: 393px){
+            width:95%;
+            position: absolute;
+            top: 280px;
+           }
+           @media (max-width: 338px){
+            width:95%;
+            position: absolute;
+            top: 240px;
+           }
     }
 }
