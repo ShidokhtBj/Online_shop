@@ -1,4 +1,5 @@
 .Discount_products{
+    box-sizing: border-box;
     position: relative;
     .Discount_products_center{
         @media (max-width: 1437px) and (min-width:1022px) {
@@ -12,18 +13,117 @@
             border-radius: 0;
             border:0;
             position: absolute;
-            top: 4230px;
+            top: 4120px;
            }
-           .Discount_products_wrap{
-            @media (max-width: 1280px){
-                flex-wrap: wrap;
-            }
-           }
-           .Discount_products_row1 , .Discount_products_row2 , .Discount_products_row3{
-            @media (max-width: 1280px){
-                display: flex;
-                flex-flow: row wrap;
-            }
-           }
+           @media (max-width: 1280px){
+            display: flex;
+             flex-wrap: wrap;
+         }
+         @media (max-width: 900px){
+            top:3720px;
+          }
+        @media (max-width: 800px){
+            top: 3490px;
+        }
+        @media (max-width: 700px){
+            top: 3030px;
+        }
+        @media (max-width: 640px){
+            top: 2800px;
+        }
+        @media (max-width: 596px){
+            top: 2580px;
+        }
+        @media (max-width: 550px){
+          top: 2250px;
+        }
+        @media (max-width: 516px){
+            top: 2100px;
+        }
+        @media (max-width: 480px){
+            top: 1900px;
+        }
+        @media (max-width: 444px){
+          top: 1720px;
+        }
+        @media (max-width: 419px){
+          top: 1660px;
+        }
+        @media (max-width: 393px){
+          top: 1500px;
+        }
+        @media (max-width: 338px){
+            top: 1300px;
+        }
     }
+   
+      
+      .Discount-item {
+      width: 16.5%;
+      justify-content: center;
+      align-items: center;
+      border-left: 1px solid #dbd9d9;
+      padding-left: 15px;
+      border-bottom: 1px solid #dbd9d9;
+      padding-bottom: 45px;
+      a div img{
+        @media (max-width: 1023px){
+            width: 13px;
+        }
+      }
+      }
+
+      @media only screen and (max-width:1280px) {
+      
+      .Discount-item { width: 20%;  }
+      .Discount-row { justify-content: flex-start; padding-left: 10px; padding-right: 10px; }
+      
+      .Discount-row .Discount-item:nth-child(5),.Discount-row .Discount-item:nth-child(10),.Discount-row .Discount-item:nth-child(15){
+      
+      border-left: none;
+      
+      }
+      
+      .Discount-row .Discount-item:nth-child(6),.Discount-row .Discount-item:nth-child(12),.Discount-row .Discount-item:nth-child(18){
+      
+          border-left: 1px solid #dbd9d9!important;
+      
+      }
+      
+      .Discount-row .Discount-item:nth-child(13),.Discount-row .Discount-item:nth-child(14),.Discount-row .Discount-item:nth-child(15){
+      
+          border-bottom: 1px solid #dbd9d9!important;
+      
+      }
+      
+      }
+      
+      @media only screen and (max-width:1023px) {
+        
+      .Discount-row { padding-top: 25px; padding-left: 0; padding-right: 0; justify-content: center; box-sizing: border-box;}
+      
+      .Discount-item { width: 48%; }
+      .Discount-row .Discount-item:nth-child(2),.Discount-row .Discount-item:nth-child(4),.Discount-row .Discount-item:nth-child(12),.Discount-row .Discount-item:nth-child(18),.Discount-row .Discount-item:nth-child(8),.Discount-row .Discount-item:nth-child(6),.Discount-row .Discount-item:nth-child(10),.Discount-row .Discount-item:nth-child(14),.Discount-row .Discount-item:nth-child(16){
+      
+      border-left: none!important;
+      
+      }
+      
+      .Discount-row .Discount-item:nth-child(13),.Discount-row .Discount-item:nth-child(14),.Discount-row .Discount-item:nth-child(15),.Discount-row .Discount-item:nth-child(16){
+      
+      
+          border-bottom: 1px solid #dbd9d9!important;
+      
+      }
+      
+      .Discount-row .Discount-item:nth-child(5),.Discount-row .Discount-item:nth-child(15){
+      
+          border-left: 1px solid #dbd9d9!important;
+      
+      }
+      
+      .Discount-item img { width: 50%; }
+      
+      }
+     
 }

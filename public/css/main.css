@@ -978,10 +978,6 @@ video {
   height: 29px;
 }
 
-.h-\[30\%\] {
-  height: 30%;
-}
-
 .h-\[300px\] {
   height: 300px;
 }
@@ -1042,10 +1038,6 @@ video {
   height: 60px;
 }
 
-.h-\[680px\] {
-  height: 680px;
-}
-
 .h-\[70\%\] {
   height: 70%;
 }
@@ -1078,6 +1070,10 @@ video {
   height: 86px;
 }
 
+.h-\[90\%\] {
+  height: 90%;
+}
+
 .h-\[90px\] {
   height: 90px;
 }
@@ -1092,6 +1088,10 @@ video {
 
 .h-\[inherit\] {
   height: inherit;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -1127,6 +1127,10 @@ video {
   width: 12.5%;
 }
 
+.w-\[120px\] {
+  width: 120px;
+}
+
 .w-\[130px\] {
   width: 130px;
 }
@@ -1153,10 +1157,6 @@ video {
 
 .w-\[15px\] {
   width: 15px;
-}
-
-.w-\[16\.66\%\] {
-  width: 16.66%;
 }
 
 .w-\[170px\] {
@@ -1496,6 +1496,14 @@ video {
   border-width: 2px;
 }
 
+.\!border-b-0 {
+  border-bottom-width: 0px !important;
+}
+
+.\!border-l-0 {
+  border-left-width: 0px !important;
+}
+
 .border-b-\[1px\] {
   border-bottom-width: 1px;
 }
@@ -1551,6 +1559,11 @@ video {
 
 .border-opacity-\[50\%\] {
   --tw-border-opacity: 50%;
+}
+
+.bg-\[\#2b2b2b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 43 43 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#39AE00\] {
@@ -1625,19 +1638,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#2b\] {
-  background-color: #2b;
-}
-
-.bg-\[\#2b2b2b\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(43 43 43 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -2047,14 +2047,6 @@ video {
     margin-top: 90px;
   }
 
-  .Tablet\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .Tablet\:ml-1 {
-    margin-left: 0.25rem;
-  }
-
   .Tablet\:block {
     display: block;
   }
@@ -2231,16 +2223,16 @@ video {
     margin-left: 0.5rem;
   }
 
+  .DeskTop\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
   .DeskTop\:mr-2 {
     margin-right: 0.5rem;
   }
 
   .DeskTop\:mt-\[5\%\] {
     margin-top: 5%;
-  }
-
-  .DeskTop\:ml-3 {
-    margin-left: 0.75rem;
   }
 
   .DeskTop\:block {
