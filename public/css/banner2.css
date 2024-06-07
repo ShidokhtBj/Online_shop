@@ -8,29 +8,8 @@
            }
         @media (max-width: 1023px) {
             width:95%;
-            position: absolute;
-            top: 360px;
            }
-           @media (max-width: 740px){
-            width:95%;
-            position: absolute;
-            top: 350px;
-           }
-           @media (max-width: 516px){
-            width:95%;
-            position: absolute;
-            top: 300px;
-           }
-           @media (max-width: 444px){
-            width:95%;
-            position: absolute;
-            top: 250px;
-           }
-           @media (max-width: 393px){
-            width:95%;
-            position: absolute;
-            top: 210px;
-           }
+          
         }
         .banner2-row1{
           

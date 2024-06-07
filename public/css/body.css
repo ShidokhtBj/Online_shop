@@ -4,6 +4,6 @@
         overflow-x: hidden;
       }
     @media (max-width: 1023px) {
-        min-height: 8000px;
+        min-height: auto;
       }
 }

@@ -49,4 +49,18 @@ footer{
         }
         
     }
+    .socialMedia{
+        a{
+            img{
+                @media (max-width: 1165px){
+                    height: 35px;
+                    width: 35px;
+                }
+                @media (max-width: 1090px){
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+    }
 }

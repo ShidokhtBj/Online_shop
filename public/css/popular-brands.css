@@ -8,53 +8,7 @@
            }
         @media (max-width: 1023px){
             width:95%;
-            position: absolute;
-            top: 650px;
            }
-        @media (max-width: 650px){
-            width:95%;
-            position: absolute;
-            top: 620px;
-           }
-           @media (max-width: 600px){
-            width:95%;
-            position: absolute;
-            top: 590px;
-           }
-           @media (max-width: 550px){
-            width:95%;
-            position: absolute;
-            top: 550px;
-           }
-           @media (max-width: 516px){
-            width:95%;
-            position: absolute;
-            top: 485px;
-           }
-           @media (max-width: 480px){
-            width:95%;
-            position: absolute;
-            top: 450px;
-           }
-           @media (max-width: 444px){
-            width:95%;
-            position: absolute;
-            top: 380px;
-           }
-           @media (max-width: 419px){
-            width:95%;
-            position: absolute;
-            top: 350px;
-           }
-           @media (max-width: 393px){
-            width:95%;
-            position: absolute;
-            top: 280px;
-           }
-           @media (max-width: 338px){
-            width:95%;
-            position: absolute;
-            top: 240px;
-           }
+      
     }
 }
