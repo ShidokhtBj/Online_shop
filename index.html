@@ -19777,11 +19777,11 @@
 
       <!--footer-->
       <footer
-        class="w-full bg-white DeskTop:border-[#D0D0D0] DeskTop:border-t-[1px] pt-8 mt-12 Tablet:mb-[500px]"
+        class="w-full bg-white DeskTop:border-[#D0D0D0] DeskTop:border-t-[1px] pt-8 mt-12 Tablet:mb-[40px]"
       >
         <div class="mx-auto px-5">
-          <div class="flex justify-between items-center Tablet:hidden">
-            <div class="ml-4 h-[30px] leading-[0px]">
+          <div class="flex justify-between items-center Tablet:justify-center">
+            <div class="ml-4 h-[30px] leading-[0px] Tablet:hidden">
               <img
                 class="w-[100%] h-[30px] inline-block object-contain"
                 src="./public/image/footer/digi.svg"
@@ -19789,15 +19789,51 @@
               />
             </div>
             <button
-              class="h-[41px] w-[139px] flex justify-center items-center px-3 py-1 cursor-pointer border-[#D0D0D0] border-[1px] text-[15px] text-[#a1a3a8] font-IRANYekanExtraBold rounded-[10px]"
+              class="btn-up h-[41px] w-[139px] flex justify-center items-center px-3 py-1 cursor-pointer border-[#D0D0D0] border-[1px] text-[15px] text-[#a1a3a8] font-IRANYekanExtraBold rounded-[10px] Tablet:border-[0px] Tablet:text-[#63D6EF]"
             >
               بازگشت به بالا &nbsp;
-              <svg style="width: 24px; height: 24px; fill: #a1a3a8">
+              <svg style="width: 24px; height: 24px; fill: #a1a3a8" class="Tablet:hidden">
                 <path
                   d="M7.707 14.707l-1.414-1.414 5-5a1 1 0 011.414 0l5 5-1.414 1.414L12 10.414l-4.293 4.293z"
                 ></path>
               </svg>
+              <img src="./public/image/footer/up2.svg" alt="up" class="w-[24px] DeskTop:hidden">
             </button>
+          </div>
+          <div class="DeskTop:hidden w-[100%] h-[80px] flex justify-between items-center border-b-[1px] border-[#d0d0d0] border-opacity-[50%] border-box">
+            <div class="flex flex-row justify-between items-center w-[25%] ">
+              <div class="flex justify-center items-center w-[30%]">
+                <svg style="width: 24px; height: 24px; fill: #424750">
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 17a4.001 4.001 0 01-3.14 3.907A3 3 0 1012 23h2a6 6 0 006-6v-.256a4.502 4.502 0 000-8.488V7a6 6 0 00-6-6h-4a6 6 0 00-6 6v1.256A4.502 4.502 0 005.5 17H7a1 1 0 001-1V9a1 1 0 00-1-1H6V7a4 4 0 014-4h4a4 4 0 014 4v1h-1a1 1 0 00-1 1v7a1 1 0 001 1h1zm.5-2H18v-5h.5a2.5 2.5 0 010 5zM6 10h-.5a2.5 2.5 0 000 5H6v-5zm7 10a1 1 0 11-2 0 1 1 0 012 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-end items-start font-IRANYekanWebRegular text-[#424750] w-[70%]">
+                <p class="text-[12px] font-bold"> ٧ روز هفته، ٢٤ ساعت</p>
+                <P class="text-[16px] font-black">تماس با پشتیبانی</p>
+              </div>
+            </div>
+            <a href="#" class="w-[70px] h-[40px] border-[1px] border-[#424750] rounded-[10px] flex justify-center items-center font-IRANYekanWebRegular text-[#424750] text-[15px] font-bold">
+              تماس
+            </a>
+          </div>
+          <div class="DeskTop:hidden w-[100%] h-[80px] flex justify-between items-center border-b-[1px] border-[#d0d0d0] border-opacity-[50%] border-box">
+            <div class="flex flex-row justify-between items-center w-[25%] ">
+              <div class="flex justify-center items-center w-[30%]">
+                <img src="./public/image/footer/footerlogo2.png" alt="up" class="w-[35px]">
+              </div>
+              <div class="flex flex-col justify-end items-start font-IRANYekanWebRegular text-[#424750] w-[70%]">
+                <p class="text-[12px] font-bold">تجربه خرید بهتر در</p>
+                <P class="text-[16px] font-black">اپلیکیشن دیجی کالا
+                </p>
+              </div>
+            </div>
+            <a href="#" class="w-[70px] h-[40px] border-[1px] border-[#0C0C0C] rounded-[10px] flex justify-center items-center font-IRANYekanWebRegular text-[#fff] text-[15px] font-bold bg-[#0C0C0C]">
+             دانلود
+            </a>
           </div>
           <div class="mb-8 mt-4 flex items-center flex-nowrap text-[14px] text-[#3f4069] font-IRANYekanWebRegular  Tablet:hidden"
           >
@@ -20116,14 +20152,14 @@
               </a>
             </div>
           </div>
-          <div class="flex items-start justify-between border-t-[1px] border-[#D0D0D0] py-8 flex-nowrap"
+          <div class="flex items-start justify-between border-t-[1px] border-[#D0D0D0] py-8 flex-nowrap Tablet:py-4"
           >
             <div class="grow">
               <div
-                class="relative ml-10 overflow-hidden text-[14px] text-[#3f4069] font-IRANYekanWebRegular"
+                class="relative DeskTop:ml-10 overflow-hidden text-[14px] text-[#3f4069] font-IRANYekanWebRegular Tablet:text-[#99A0A1] Tablet:text-[13px] "
                 id="footer-details"
               >
-                <h1>
+                <h1 class="Tablet:text-[#424750]">
                   <strong
                     >فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید
                     آنلاین</strong
@@ -20367,7 +20403,7 @@
                 </p>
               </div>
               <input
-                class="expan-btn items-center cursor-pointer mt-2 text-[#72bfd3] text-[14px] font-IRANYekanWebRegular font-bold"
+                class="expan-btn items-center cursor-pointer mt-2 text-[#72bfd3] text-[14px] font-IRANYekanWebRegular font-bold Tablet:text-[#A1A3A8]"
                 type="checkbox"
               />
             </div>

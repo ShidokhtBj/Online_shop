@@ -6,6 +6,14 @@ footer{
        line-height: var(--line-height);
         overflow: hidden;
         position: relative;
+        @media (max-width: 1023px){
+            --max-lines: 2.5;
+            --line-height:2;
+           max-height: calc(var(--max-lines) * 1rem * var(--line-height));
+           line-height: var(--line-height);
+            overflow: hidden;
+            position: relative;
+        }
     }
     #footer-details:has(+ .expan-btn:not(:checked)):before{
         content: "";
@@ -24,6 +32,15 @@ footer{
         background-repeat: no-repeat;
         background-position: left;
         width: 90px;
+        @media (max-width: 1023px){
+            background: url(..\image\footer\light.svg);
+            appearance: none;
+            cursor: pointer;
+            margin-top: 1rem;
+            background-repeat: no-repeat;
+            background-position: left;
+            width: 90px;
+        }
     }
     .expan-btn::before{
         content: "مشاهده بیشتر";
@@ -39,6 +56,10 @@ footer{
         h1{
             font-size: 20px;
             font-weight: 900;
+            @media (max-width: 1023px){
+            font-size: 14px;
+            font-weight: 900;
+            }
         }
         a{
             color:#72bfd3;
@@ -46,6 +67,16 @@ footer{
         h2{
             font-size: 18px;
            font-weight: 700;
+           @media (max-width: 1023px){
+            font-size: 16px;
+            font-weight: 700;
+            }
+        }
+        
+    }
+    .btn-up{
+        @media (max-width: 1023px){
+            font-weight: 900;
         }
         
     }
