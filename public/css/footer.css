@@ -28,12 +28,12 @@ footer{
         appearance: none;
         cursor: pointer;
         margin-top: 1rem;
-        background: url(..\image\footer\blue.svg);
+        background: url(../image/footer/blue.svg);
         background-repeat: no-repeat;
         background-position: left;
         width: 90px;
         @media (max-width: 1023px){
-            background: url(..\image\footer\light.svg);
+            background: url(../image/footer/light.svg);
             appearance: none;
             cursor: pointer;
             margin-top: 1rem;
@@ -94,4 +94,37 @@ footer{
             }
         }
     }
+    .field{
+        display:flex;
+        height: 48px;
+        width: 80%;
+    }
+    .field .error{
+    align-items: center;
+    position:absolute;
+    color: #d93025;
+    top:50px;
+    font-size: 15px;
+    display:none;
+    .error-icon{
+        margin-right: 6px;
+        margin-left: 6px;
+        font-size: 15px;
+    }
+   }
+   .invalid .error{
+    display:flex;
+   }
+   .invalid input{
+    background-color: #fff3f3;
+   }
+   .button{
+    height: 48px;
+    width: 20%;
+    transition: all 0.3s ease;
+    input:hover{
+        background-color: #A1A3A8;
+        color:#fff;
+    }
+   }
 }

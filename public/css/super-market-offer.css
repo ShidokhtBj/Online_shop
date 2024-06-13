@@ -1,9 +1,4 @@
 .super-market{
-    @font-face {
-        font-family: IRANYekanWeb-ExtraBold;
-        src:  url(./public/font/IRANYekanWeb-ExtraBold.woff) format("woff");
-        
-    }
     .super-market-center{
         @media (max-width: 1437px) and (min-width:1022px) {
             Width:90%;
@@ -172,7 +167,6 @@
                             color: #39AE00;
                             font-size: 14px;
                             font-weight: bold;
-                            font-family: IRANYekanWeb-ExtraBold;
                             text-align: center;
                               }
                               

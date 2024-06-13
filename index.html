@@ -46,10 +46,12 @@
     <link rel="stylesheet" href="./public/css/Discount_products.css" type="text/css" />
     <link rel="stylesheet" href="./public/css/Article.css" type="text/css" />
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <div
-      class="main w-[100%] h-[100vh] min-h-auto scroll-smooth"
+      class="main w-[100%] h-[100vh] min-h-auto"
       id="main"
     >
       <!--Navbar-Top-->
@@ -19789,7 +19791,8 @@
               />
             </div>
             <button
-              class="btn-up h-[41px] w-[139px] flex justify-center items-center px-3 py-1 cursor-pointer border-[#D0D0D0] border-[1px] text-[15px] text-[#a1a3a8] font-IRANYekanExtraBold rounded-[10px] Tablet:border-[0px] Tablet:text-[#63D6EF]"
+              class="btn-up outline-none h-[41px] w-[139px] flex justify-center items-center px-3 py-1 cursor-pointer border-[#D0D0D0] border-[1px] text-[15px] text-[#a1a3a8] font-IRANYekanExtraBold rounded-[10px] Tablet:text-[#63D6EF] Tablet:border-[0px]" 
+              onclick="scrollToTop()"
             >
               بازگشت به بالا &nbsp;
               <svg style="width: 24px; height: 24px; fill: #a1a3a8" class="Tablet:hidden">
@@ -20283,29 +20286,25 @@
                 >
                   با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید
                 </div>
-                <div class="w-full flex items-center">
-                  <form class="w-full flex">
-                    <label class="w-[80%] h-[48px]">
-                      <div class="pr-1 flex items-center">
-                        <input
-                          class="px-2 w-[100%] h-[48px] text-[#A1A3A8] text-[18px] font-IRANYekanExtraBold bg-[#F0F0F1] rounded-[11px]"
-                          type="email"
-                          name="email"
-                          placeholder="ایمیل شما"
-                          value=""
-                        />
+                <div class="w-full flex items-start flex-col">
+                  <form class="form w-full flex relative" action="#" method="GET">
+                      <div class="field email-field">
+                          <div class="input-field w-[100%] h-[100%] pr-1 flex items-center font-IRANYekanExtraBold font-bold">
+                            <input
+                              class="email px-2 w-[100%] h-[48px] text-[#A1A3A8] text-[18px] font-IRANYekanExtraBold bg-[#F0F0F1] rounded-[11px] outline-none"
+                              type="email"
+                              name="email"
+                              placeholder="ایمیل شما"
+                            />
+                          </div>
+                          <span class="error email-error">
+                            <i class="bx bx-error-circle error-icon"></i>
+                            <p class="error-text font-IRANYekanExtraBold">لطفا پست اکترونیک معتبر را وارد کنید</p>
+                          </span>
                       </div>
-                    </label>
-                    <button
-                      class="relative flex items-center rounded-[11px] mr-2 bg-[#E0E0E2] w-[20%] h-[48px]"
-                      type="submit"
-                    >
-                      <div
-                        class="flex items-center justify-center relative grow text-[#fff] text-[18px] font-IRANYekanExtraBold"
-                      >
-                        ثبت
+                      <div class="input-field button">
+                        <input type="submit" value="ثبت" class="submit flex items-center justify-center rounded-[11px] mr-2 bg-[#E0E0E2] w-[100%] h-[100%] text-[#fff] text-[18px] font-IRANYekanExtraBold cursor-pointer" />
                       </div>
-                    </button>
                   </form>
                 </div>
               </div>
@@ -20976,6 +20975,5 @@
     </script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./public/js/main.js"></script>
-    <script src="./node_modules/animate.css-dynamic-3.0.0/animate.min.js"></script>
   </body>
 </html>

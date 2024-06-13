@@ -1,9 +1,6 @@
 #main{
     background: #FFF;
-    @media (max-width: 729px) {
-        overflow-x: hidden;
-      }
-    @media (max-width: 1023px) {
-        min-height: auto;
-      }
+}
+html{
+  scroll-behavior: smooth;
 }
