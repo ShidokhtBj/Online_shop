@@ -3,6 +3,9 @@
     width: 170px;
     height: 100%;
     position: absolute;
+    @media (max-width: 400px){
+      width: 100px;
+    }
   }
   div a.animate__animated:hover {
     div.my-bg {
@@ -11,6 +14,11 @@
       opacity: 0.4;
       animation-name: zoomIn;
       animation-duration: 0.4s;
+    }
+  }
+  a{
+    @media (max-width: 400px){
+      width: 100px;
     }
   }
 }
