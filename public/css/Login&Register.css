@@ -1,0 +1,16 @@
+.login-center{
+    input[type="text"]{
+        caret-color: #2190B2;
+        &:focus{
+           
+            outline: 0;
+        }
+    }
+   .Loginbutton{
+    transition: all 0.3s ease;
+    input:hover{
+        background-color: #d93025;
+        color:#fff;
+    }
+   }
+}

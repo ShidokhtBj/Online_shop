@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="./public/css/Discount_products.css" type="text/css" />
     <link rel="stylesheet" href="./public/css/Article.css" type="text/css" />
     <link rel="stylesheet" href="./public/css/Support.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/location.css" type="text/css" />
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
@@ -126,7 +127,7 @@
               class="flex items-center justify-end header__center_login w-[25%] h-[70%] flex-row Tablet:hidden"
             >
               <a
-                href="#"
+                href="./Login&Register.html"
                 class="w-[130px] h-[40px] flex flex-row justify-center items-center text-center border rounded-[7px] border-[#dfdfdf] no-underline font-IRANYekanWebRegular font-bold text-[13px] space-x-1 text-[#424750]"
               >
                 <div class="flex ml-2">
@@ -15190,8 +15191,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="header__bottom__location flex items-center h-[40px] cursor-pointer justify-center relative"
+          <div class="header__bottom__location flex items-center h-[40px] cursor-pointer justify-center relative"
             id="city"
           >
             <div class="ml-2 w-[22px] h-[22px]">
@@ -15211,7 +15211,211 @@
             </div>
           </div>
         </nav>
+        <div class="cover absolute top-0 left-0 bg-[#2b2b2b] opacity-[80%] hidden"></div>
+      <div class="location w-[460px] h-[80vh] hidden bg-[#fff] absolute top-[50%] right-[35%] rounded-[10px] flex-col items-center overflow-hidden">
+              <div class="location-top w-[100%] h-[60px] relative p-[20px] flex items-center justify-between">
+                      <span class="w-max h-[30px] text-[#233662] font-IRANYekanWeb-ExtraBold  text-[18px] font-black flex justify-center">انتخاب شهر</span>
+                      <svg style="width: 24px; height: 24px; fill: #233662" class="location-close cursor-pointer"><path fill-rule="evenodd" d="M18.364 7.05L16.95 5.636 12 10.586l-4.95-4.95L5.636 7.05l4.95 4.95-4.95 4.95 1.414 1.414 4.95-4.95 4.95 4.95 1.414-1.414-4.95-4.95 4.95-4.95z" clip-rule="evenodd"></path></svg>
+              </div>
+              <div class="w-[91%] border-t-[1px] border-[#d0d0d0]"></div>
+              <div class="location-bottom px-[20px] w-[100%] overflow-auto text-[#233662] font-IRANYekanWeb-ExtraBold  text-[17px] font-black">
+                    <a class="location-auto h-[80px] flex flex-row justify-start items-center text-[#19BFD3]" href="#">
+                        <svg style="width: 27px; height: 27px; fill: #19BFD3">
+                            <path fill-rule="evenodd" d="M20.94 11A8.994 8.994 0 0013 3.06V1h-2v2.06A8.994 8.994 0 003.06 11H1v2h2.06A8.994 8.994 0 0011 20.94V23h2v-2.06A8.994 8.994 0 0020.94 13H23v-2h-2.06zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-7 4c0 3.87 3.13 7 7 7s7-3.13 7-7-3.13-7-7-7-7 3.13-7 7z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="mr-[10px]">مکان‌یابی خودکار</span>
+                    </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>آذربایجان شرقی</span>
+                        <svg style="width: 24px; height: 24px; fill: #233662">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                    </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>آذربایجان غربی</span>
+                        <svg style="width: 24px; height: 24px; fill:#233662">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>اردبیل</span>
+                        <svg style="width: 24px; height: 24px; fill:#233662">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>اصفهان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233662">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>البرز</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>ایلام</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>تهران</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>بوشهر</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>چهار محال و بختیاری</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>خراسان جنوبی</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>خراسان رضوی</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>خراسان شمالی</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>خوزستان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>زنجان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>سمنان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>سیستان و بلوچستان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>فارس</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>قزوین</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>قم</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>کردستان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>کرمان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>کرمانشاه</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>کهگیلویه و بویراحمد</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>گلستان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>گیلان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>لرستان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>مازندران</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>هرمزگان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>مرکزی</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                    <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] border-b-[1px] border-[#F4F4F5]" href="#">
+                        <span>همدان</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+                      <a class="location-item h-[58px] flex flex-row justify-between items-center text-[#233662] mb-[10px]" href="#">
+                        <span>یزد</span>
+                        <svg style="width: 24px; height: 24px; fill:#233262">
+                            <path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path>
+                        </svg>
+                      </a>
+        
+            </div>
+        </div>
       </header>
+      
       <!--Navbar-footer-->
       <div
         id="Navbar-footer"

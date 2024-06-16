@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./public/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="./public/css/Login&Register.css" type="text/css" />
+    <title>فروشگاه اینترنتی دیجی کالا</title>
+    <link
+      rel="shortcut icon"
+      href="./public/image/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div
+    class="main w-[100%] h-[100vh] min-h-auto bg-white flex justify-center items-center"
+    id="main">
+    <div class="login-center h-[440px] w-[400px] border-[1px] border-[#d0d0d0] rounded-[10px] text-[14px] font-IRANYekanWebMedium Tablet:w-[100%] Tablet:border-[0px]">
+      <div class="logo-digikala w-[100%] h-[20%] flex justify-center items-center">
+        <img
+                  class="w-[155px] object-center inline-block"
+                  src="./public/image/nav/logo.svg"
+                  alt="logo-img"
+              /></a>
+      </div>
+      <div class="login-content px-[37px] flex flex-col justify-center items-start mt-[10px] mb-[10px]">
+        <span class="login-title mb-[20px] w-full font-black text-[20px] ">ورود | ثبت‌نام</span>
+        <div class="w-full mb-[20px]">
+          <p>سلام!</p>
+          <p class="mt-[5px]">لطفا شماره موبایل یا ایمیل خود را وارد کنید
+          </p>
+        </div>
+        <form action="#" method="get" class="w-[100%] relative flex flex-col" id="userForm">
+          <div class="FieldLogin email-or-number-field w-[100%]">
+            <div class="LoginInput-field w-[100%] flex items-center font-IRANYekanExtraBold font-bold">
+              <input
+                class="w-[100%] h-[47px] rounded-[10px] border-[1px] border-[#2190B2] mb-[40px] pr-[20px]"
+                type="text"
+                name="username"
+                id="userInput"
+              />
+            </div>
+            <span class="font-IRANYekanExtraBold absolute top-[35%] text-[#d93025]" id="errorMessage">
+            </span>
+        </div>
+        <div class="login-field Loginbutton w-[100%]">
+          <input type="submit" value="ورود" class="submit-login w-[100%] h-[47px] rounded-[10px] bg-[#EF4056] mb-[20px] text-[#fff] font-black text-[15px]"/>
+        </div>
+        </form>
+        <div class="login-caption  text-[13.5px]">
+          ورود شما به معنای پذیرش 
+          <a href="#" class="text-[#2190b2]">شرایط دیجی‌کالا</a> و
+          <a href="#" class="text-[#2190b2]">قوانین حریم‌خصوصی</a>
+          است
+        </div>
+      </div>
+    </div>
+    <div class="register_message absolute bg-[#0C0C0C] w-[290px] h-[140px] top-[10px] text-[#fff] text-[16px] font-IRANYekanWebMedium rounded-[10px] p-[10px] hidden justify-center items-center font-black Tablet:top-[75%]">
+      <span class="w-[80%] flex justify-start items-center leading-7">حساب کاربری با مشخصات وارد شده وجود ندارد. لطفا از شماره تلفن همراه برای ساخت حساب کاربری استفاده نمایید.</span>
+      <a href="#" class="text-[#2190B2] flex w-[20%] justify-end pl-2 register_message_close">باشه</a>
+    </div>
+  </div>
+    <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const userInput = document.getElementById('userInput');
+    userInput.focus();
+   });
+
+    document.getElementById('userForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const userInput = document.getElementById('userInput').value;
+    const errorMessage = document.getElementById('errorMessage');
+    const defaltValue="text@gmail.com"; 
+
+    // Clear previous error message
+    errorMessage.textContent = '';
+
+    if (userInput.trim() === '') {
+        errorMessage.textContent = "لطفا این قسمت را خالی نگذارید";
+        errorMessage.style.display= "block";
+        document.getElementById('userInput').style.borderColor="#d93025";
+        register_message.style.display = "none";
+    } else if (!isValidEmail(userInput) && !isValidPhoneNumber(userInput)) {
+        errorMessage.textContent = "شماره موبایل یا ایمیل نادرست است.";
+        errorMessage.style.display= "block";
+        document.getElementById('userInput').style.borderColor="#d93025";
+        register_message.style.display = "none";
+    } else {
+        // Code to handle valid input
+        errorMessage.style.display= "none";
+        document.getElementById('userInput').style.borderColor="#2190b2";
+        if (userInput === defaltValue) {
+        window.location.href="./index.html";
+        register_message.style.display = "none";
+        }
+        else{
+          register_message.style.display = "flex";
+        }
+    }
+    });
+
+    function isValidEmail(email) {
+        // Simple email validation regex
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    }
+
+    function isValidPhoneNumber(phone) {
+        // Simple phone number validation regex (matches 10-15 digit numbers)
+        const phonePattern = /^\d{10,15}$/;
+        return phonePattern.test(phone);
+    }
+
+    let register_message_close= document.querySelector(".register_message_close");
+    let register_message= document.querySelector(".register_message");
+    register_message_close.addEventListener("click",function(e){
+      register_message.style.display = "none";});
+    </script>
+</body>
+</html>
