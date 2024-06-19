@@ -111,9 +111,11 @@ let locationClose = document.querySelector(".location-close");
 let locationContent = document.querySelector(".location");
 let cover = document.querySelector(".cover");
 locationOpen.addEventListener("click", function (){
+  setTimeout(() => {
   window.fullScreen = true;
   locationContent.style.display="flex"
-  cover.style.display="flex"
+  cover.style.display="flex";
+  }, 500);
   $('body').addClass('no-scroll');
   document.getElementById(".cover").requestFullscreen();
 });
@@ -127,3 +129,11 @@ locationClose.addEventListener("click", function (){
   cover.style.display="none"
   $('body').removeClass('no-scroll');
 });
+
+
+
+
+
+
+
+

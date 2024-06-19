@@ -1,0 +1,12 @@
+.Digi_Plus {
+  .Digi_Plus_center {
+    border-radius: 15px;
+    background: linear-gradient(274.36deg, #E0CBDD 10%, #ECE6EC 100%);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+
+  
+  }
+}
