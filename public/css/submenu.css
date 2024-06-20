@@ -1,4 +1,5 @@
 .submenu{
+    z-index :100 !important;
     .Title__submenu{
         scrollbar-color: #bbbbbb #e5e5e5;
         .Title__submenu__item{
@@ -111,4 +112,8 @@ html::-webkit-scrollbar {
   }
   .active {
     display: block !important;
+  }
+  .submenu_cover{
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5);
   }

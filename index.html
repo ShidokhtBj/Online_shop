@@ -57,7 +57,7 @@
     >
       <!--Navbar-Top-->
       <header
-        class="w-[100%] flex flex-col fixed top-0 right-0 box-border transition-all p-0 m-0  z-50"
+      class="w-[100%] flex flex-col fixed top-0 right-0 box-border transition-all p-0 m-0 z-50"
         id="navbar"
       >
         <div class="header__top flex flex-row w-[100%] h-[50px] items-center justify-center relative z-50 Tablet:h-[37px] phone:h-[27px]"
@@ -160,14 +160,14 @@
         </div>
         
         <nav
-          class="header__bottom flex flex-row flex-nowrap w-[100%] box-border items-center z-2 justify-between px-5 grow relative bg-white border-opacity-70 border-b-[1px] border-[#D0D0D0] shadow-[0px_3px_3px_-3px_#D0D0D0] transition-all Tablet:hidden phone:hidden"
+          class="header__bottom flex flex-row flex-nowrap w-[100%] box-border items-center z-2 justify-between pl-5 grow relative bg-white border-opacity-70 border-b-[1px] border-[#D0D0D0] shadow-[0px_3px_3px_-3px_#D0D0D0] transition-all Tablet:hidden phone:hidden"
           id="navbar-bottom"
         >
         
           <div class="header__bottom__item flex relative">
             <div
               id="nav__item"
-              class="header__bottom__item__menu flex h-[40px] items-center cursor-pointer justify-center mr-2 relative group" 
+              class="header__bottom__item__menu flex h-[40px] items-center cursor-pointer justify-center pr-[20px] group" 
             >
               <div class="ml-2 w-[15px] h-[15px]">
                 <img src="./public/image/nav/menu.svg" alt="menu" />
@@ -175,8 +175,9 @@
               <span class="font-IRANYekanWebRegular font-bold text-[17px]"
                 >دسته‌بندی کالاها</span
               >
-              <div
-                class="submenu group-hover:block absolute w-[80vw] h-[calc(100vh_-_220px)] bg-[#fff] right-0 top-[40px] group-hover:transition group-hover:duration-1000 group-hover:delay-1000 group-hover:ease-in-out shadow-[0px_0px_5px_0px_#a1a3a8] z-40 hidden"
+              <div class="submenu_cover w-[100vw] h-[100vh] absolute group-hover:block z-40 hidden right-0 top-[40px]">
+                <div
+                class="submenu absolute w-[80vw] h-[calc(100vh_-_220px)] bg-[#fff] right-[20px] top-[0px] group-hover:transition group-hover:duration-1000 group-hover:delay-1000 group-hover:ease-in-out shadow-[0px_0px_5px_0px_#a1a3a8] z-40"
               >
                 <div
                   class="Title__submenu bg-[#F0F0F1] w-[15%] h-[100%] overflow-auto flex flex-col"
@@ -15056,6 +15057,9 @@
                 </div>
               </div>
             </div>
+             
+
+            </div>
             <div
               class="header__bottom__item__title flex h-[40px] items-center justify-center pr-4 box-border"
             >
@@ -15213,7 +15217,6 @@
             </div>
           </div>
         </nav>
-        <div class="cover_submenu absolute top-[100%] left-0 bg-[#2b2b2b] opacity-[80%] z-[39] h-[100vh] w-[100%] hidden"></div>
         <div class="cover absolute top-0 left-0 bg-[#2b2b2b] opacity-[80%] hidden"></div>
       <div class="location w-[460px] h-[80vh] hidden bg-[#fff] absolute top-[50%] right-[35%] rounded-[10px] flex-col items-center overflow-hidden">
               <div class="location-top w-[100%] h-[60px] relative p-[20px] flex items-center justify-between">

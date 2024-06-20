@@ -1,8 +1,5 @@
 .super-market{
     .super-market-center{
-        @media (max-width: 1023px) {
-            Width:95%;
-           }
            .super-market-logo1{
             @media (max-width: 1023px) {
               width:45px;

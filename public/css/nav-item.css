@@ -35,6 +35,6 @@ header .header__bottom{
         display: flex;
     }
 }
-body:has(.header__bottom__item__menu:hover)  .cover_submenu{
+/*body:has(.header__bottom__item__menu:hover)  .cover_submenu{
     display: flex;
-}
+}*/

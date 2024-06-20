@@ -5,11 +5,11 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    menu.style.top = "0px";
+    menu.style.top = "-5px";
     menu.classList.add("translate-y-1");
     menu.classList.add("duration-700");
   } else {
-    menu.style.top = "-30px";
+    menu.style.top = "-40px";
     menu.classList.add("-translate-y-1");
     menu.classList.add("duration-700");
   }
