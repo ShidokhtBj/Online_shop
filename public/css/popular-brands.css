@@ -9,6 +9,16 @@
         @media (max-width: 1023px){
             width:95%;
            }
-      
+
+           .swiper-slide{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            & img{
+                @media (max-width: 500px){
+                    width:89px;
+                   }
+            }
+           }
     }
 }

@@ -130,8 +130,21 @@ locationClose.addEventListener("click", function (){
   $('body').removeClass('no-scroll');
 });
 
+// submenu hover
+let submenu_cover= document.querySelector(".submenu_cover");
+let submenu = document.querySelector(".submenu");
+let header__bottom__item__menu = document.querySelector(".header__bottom__item__menu");
+submenu.addEventListener("mouseleave" , function (){
+      submenu_cover.style.display="none";
+});
 
+header__bottom__item__menu.addEventListener("mouseleave" , function (){
+      submenu_cover.style.display="none";
+});
 
+header__bottom__item__menu.addEventListener("mouseenter" , function (){
+      submenu_cover.style.display="block";
+});
 
 
 
