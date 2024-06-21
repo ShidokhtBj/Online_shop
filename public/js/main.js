@@ -1,6 +1,6 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-let menu = document.querySelector(".header__bottom");
-let header = document.getElementById("navbar");
+const menu = document.querySelector(".header__bottom");
+const header = document.getElementById("navbar");
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
@@ -109,7 +109,7 @@ closeMe.addEventListener("click",function(e){
 let locationOpen = document.querySelector(".header__bottom__location");
 let locationClose = document.querySelector(".location-close");
 let locationContent = document.querySelector(".location");
-let cover = document.querySelector(".cover");
+const cover = document.querySelector(".cover");
 locationOpen.addEventListener("click", function (){
   setTimeout(() => {
   window.fullScreen = true;
@@ -145,6 +145,54 @@ header__bottom__item__menu.addEventListener("mouseleave" , function (){
 header__bottom__item__menu.addEventListener("mouseenter" , function (){
       submenu_cover.style.display="block";
 });
+
+// search_box_mobile open & close
+const mediaQuery= window.matchMedia('(max-width: 1023px)');
+function checkMediaQuery (e){
+  if (e.matches) {
+    const search_box_mobile = document.querySelector(".search_box_mobile");
+    const search_box = document.getElementById('search_box');
+    const close_search_box = document.querySelector(".close_search_box");
+    search_box.addEventListener("click", function () {
+      search_box_mobile.classList.add('show');
+      document.body.classList.add('overflow-hidden');
+    });
+    close_search_box.addEventListener("click", function () {
+      search_box_mobile.classList.remove('show');
+      document.body.classList.remove('overflow-hidden');
+    });
+   
+  }
+  else{
+    const search_on_click = document.querySelector(".search_on_click");
+    const cover_search = document.querySelector(".cover_search");
+    search_box.addEventListener("click", function () {
+      search_on_click.style.display= "flex";
+      cover_search.style.display="flex";
+    });
+    cover_search.addEventListener("click", function () {
+      search_on_click.style.display= "none";
+      cover_search.style.display="none";
+    });
+  }
+}
+
+checkMediaQuery(mediaQuery);
+mediaQuery.addListener(checkMediaQuery);
+ 
+  let  search_del_pic = document.querySelector(".search_del_pic");
+  let  search_del = document.querySelector(".search_del");
+  search_del.addEventListener("input", function () {
+    if(search_del.value.length > 0){
+      search_del_pic.style.display='block';
+    }
+    else search_del_pic.style.display='none';
+  });
+
+  search_del_pic.addEventListener("click", function () {
+    search_del.value = '';
+    search_del_pic.style.display='none';
+  });
 
 
 
