@@ -19300,16 +19300,6 @@ function checkMediaQuery (e){
 checkMediaQuery(mediaQuery);
 mediaQuery.addListener(checkMediaQuery);
  
-  const  search_del_pic = document.querySelectorAll(".search_del_pic");
-  const  search_del = document.querySelectorAll(".search_del");
-  search_del.addEventListener("click", function () {
-    search_del_pic.style.display='block';
-  });
-
-  search_del_pic.addEventListener("click", function () {
-    search_del.value = '';
-    search_del_pic.style.display='none';
-  });
 
 
     document.addEventListener('DOMContentLoaded', function() {
